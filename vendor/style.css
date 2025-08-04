@@ -128,9 +128,15 @@ html {
 }
 
 .page {
-  font-family: "Inter", Arial, sans-serif;
+ font-family: "Inter", Arial, sans-serif;
   font-size: 16px;
   line-height: 20px;
+  color: #333; /* opcional, só para boa leitura */
+}
+
+/* Caso queira usar Noto Serif em elementos específicos, ex: títulos */
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Noto Serif", "Times New Roman", serif;
 }
 
 body {
