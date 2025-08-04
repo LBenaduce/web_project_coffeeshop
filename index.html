@@ -2,15 +2,6 @@
 <html lang="en">
 
 <head>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-
-  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100..900;1,100..900&family=Noto+Serif:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet" />
-
-  <link rel="stylesheet" href="./vendor/normalize.css" />
-  <link rel="stylesheet" href="pages/index.css" />
-  <link rel="stylesheet" href="vendor/style.css" />
-
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Triple Espresso: café especial na biblioteca Triple Peaks, com receitas incríveis, ambiente acolhedor e espaço para reservas." />
@@ -19,9 +10,23 @@
 
   <title>Triple Espresso</title>
 
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100..900;1,100..900&family=Noto+Serif:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="./vendor/normalize.css" />
+  <link rel="stylesheet" href="pages/index.css" />
+  <link rel="stylesheet" href="vendor/style.css" />
+
   <style>
     html {
       scroll-behavior: smooth;
+    }
+
+    .page {
+      min-width: 1100px;
+      max-width: 1600px;
+      margin: 0 auto;
     }
   </style>
 </head>
@@ -39,7 +44,7 @@
       </nav>
     </header>
 
-    <main>
+    <main class="content">
       <section class="hero">
         <div class="hero-text">
           <h2><span class="highlight">Café especial</span><br />na biblioteca Triple Peaks</h2>
@@ -91,7 +96,7 @@
       </section>
     </main>
 
-    <footer>
+    <footer class="footer">
       <div class="footer-left">
         <p>© 2025 Luigi Benaduce</p>
       </div>
