@@ -1,7 +1,14 @@
+
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
+  font-family: "Inter", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 20px;
   color: #000;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 a {
@@ -9,11 +16,34 @@ a {
   color: inherit;
 }
 
+
+.page {
+  min-width: 1100px;
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: "Inter", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  color: #333;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Noto Serif", "Times New Roman", serif;
+}
+
+
+.serif-text {
+  font-family: "Noto Serif", "Times New Roman", serif;
+}
+
+
 .header {
   display: flex;
   justify-content: space-between;
-  padding: 1rem 2rem;
   align-items: center;
+  padding: 1rem 2rem;
 }
 
 .logo {
@@ -26,11 +56,12 @@ a {
   gap: 1.5rem;
 }
 
+
 .hero {
   display: flex;
+  justify-content: space-between;
   padding: 2rem;
   background: #f5f5f5;
-  justify-content: space-between;
 }
 
 .hero-text {
@@ -51,6 +82,7 @@ a {
   color: #666;
 }
 
+
 .recipes {
   background-color: #0d1d3b;
   color: white;
@@ -63,6 +95,7 @@ a {
   justify-content: center;
   gap: 2rem;
   margin-top: 1rem;
+  flex-wrap: wrap;
 }
 
 .video iframe {
@@ -70,6 +103,7 @@ a {
   height: 170px;
   border: none;
 }
+
 
 .reservation {
   background-color: #d6e7ff;
@@ -123,30 +157,27 @@ footer ul {
   padding: 0;
 }
 
-html {
-  scroll-behavior: smooth;
-}
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
 
-.page {
- font-family: "Inter", Arial, sans-serif;
-  font-size: 16px;
-  line-height: 20px;
-  color: #333; /* opcional, só para boa leitura */
-}
+  .hero-text,
+  .hero-image {
+    max-width: 100%;
+  }
 
-/* Caso queira usar Noto Serif em elementos específicos, ex: títulos */
-h1, h2, h3, h4, h5, h6 {
-  font-family: "Noto Serif", "Times New Roman", serif;
-}
+  .videos {
+    flex-direction: column;
+    align-items: center;
+  }
 
-body {
-  margin: 0;
-  font-family: "Inter", Arial, sans-serif;
-  font-size: 16px;
-  line-height: 20px;
-  color: #000;
-}
-
-.serif-text {
-  font-family: "Noto Serif", "Times New Roman", serif;
+  footer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+  }
 }
