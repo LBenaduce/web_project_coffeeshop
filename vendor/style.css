@@ -1,3 +1,4 @@
+/* Estilos base */
 body {
   margin: 0;
   font-family: "Inter", Arial, sans-serif;
@@ -15,14 +16,7 @@ a {
   color: inherit;
 }
 
-.page {
-  min-width: 1100px;
-  max-width: 1600px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-
+/* Tipografia com serifas para títulos */
 h1, h2, h3, h4, h5, h6 {
   font-family: "Noto Serif", "Times New Roman", serif;
 }
@@ -31,6 +25,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Noto Serif", "Times New Roman", serif;
 }
 
+/* Header */
 .header {
   display: flex;
   flex-direction: column;
@@ -42,6 +37,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: bold;
 }
 
+/* Navegação */
 .nav-links {
   list-style: none;
   display: flex;
@@ -49,6 +45,7 @@ h1, h2, h3, h4, h5, h6 {
   padding: 0;
 }
 
+/* Hero section */
 .hero {
   display: flex;
   justify-content: space-between;
@@ -74,6 +71,7 @@ h1, h2, h3, h4, h5, h6 {
   color: #666;
 }
 
+/* Receitas */
 .recipes {
   background-color: #0d1d3b;
   color: white;
@@ -95,6 +93,7 @@ h1, h2, h3, h4, h5, h6 {
   border: none;
 }
 
+/* Reservas */
 .reservation {
   background-color: #d6e7ff;
   padding: 2rem;
@@ -134,6 +133,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 0.9rem;
 }
 
+/* Rodapé */
 .footer {
   background-color: #0d1d3b;
   color: white;
@@ -147,6 +147,7 @@ h1, h2, h3, h4, h5, h6 {
   padding: 0;
 }
 
+/* Responsividade */
 @media (max-width: 768px) {
   .hero {
     flex-direction: column;
