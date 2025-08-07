@@ -32,62 +32,68 @@
         <ul class="nav-links">
           <li><a href="#receitas">Receitas</a></li>
           <li><a href="#reserva">Reservar uma mesa</a></li>
-          <li><a href="#">Contatos</a></li>
+          <li><a href="#contatos">Contatos</a></li>
         </ul>
       </nav>
     </header>
 
     <main class="content">
-      <section class="hero">
-        <div class="hero-text">
-          <h2><span class="highlight">Café especial</span><br />na biblioteca Triple Peaks</h2>
-          <p>Esta é nossa zona de estudo! Temos aquele cafezinho para energizar você e vibrações aconchegantes para soltar a criatividade.</p>
-          <p class="hours">Horários:<br />Segunda a sexta (10:00 – 19:00)<br />Sábado e domingo (11:00 – 18:00)</p>
-        </div>
-        <div class="hero-image">
-          <img src="images/caffè.jpg" alt="Ilustração café" />
-        </div>
-      </section>
+  <section class="hero">
+    <div class="hero-text">
+      <h2><span class="highlight">Café especial</span><br />na biblioteca Triple Peaks</h2>
+      <p>Esta é nossa zona de estudo! Temos aquele cafezinho para energizar você e vibrações aconchegantes para soltar a criatividade.</p>
+      <p class="hours">Horários:<br />Segunda a sexta (10:00 – 19:00)<br />Sábado e domingo (11:00 – 18:00)</p>
+    </div>
+    <div class="hero-image">
+      <img src="images/caffè.jpg" alt="Ilustração café" />
+    </div>
+  </section>
 
-      <section class="recipes" id="receitas">
-        <h3>Receitas</h3>
-        <p>Confira algumas receitas que coletamos para seu café:</p>
-        <div class="videos">
-          <div class="video">
-            <iframe src="https://www.youtube.com/embed/dWIPmUtAFe0" title="Caffè Ristretto" allowfullscreen></iframe>
-            <p>Caffè Ristretto<br /><small>~5 min</small></p>
-          </div>
-          <div class="video">
-            <iframe src="https://www.youtube.com/embed/SfG1erJg8cI" title="Receita Moka Bialetti" allowfullscreen></iframe>
-            <p>Receita Moka Bialetti<br /><small>~15 min</small></p>
-          </div>
-        </div>
-      </section>
+  <section class="recipes" id="receitas">
+    <h3>Receitas</h3>
+    <p>Confira algumas receitas que coletamos para seu café:</p>
+    <div class="videos">
+      <div class="video">
+        <iframe src="https://www.youtube.com/embed/dWIPmUtAFe0" title="Caffè Ristretto" allowfullscreen></iframe>
+        <p>Caffè Ristretto<br /><small>~5 min</small></p>
+      </div>
+      <div class="video">
+        <iframe src="https://www.youtube.com/embed/SfG1erJg8cI" title="Receita Moka Bialetti" allowfullscreen></iframe>
+        <p>Receita Moka Bialetti<br /><small>~15 min</small></p>
+      </div>
+    </div>
+  </section>
 
-      <section class="reservation" id="reserva">
-        <h3>Reservar uma mesa</h3>
-        <form>
-          <label for="nome">Nome *</label>
-          <input type="text" id="nome" required />
+  <section class="reservation" id="reserva">
+    <h3>Reservar uma mesa</h3>
+    <form>
+      <label for="nome">Nome *</label>
+      <input type="text" id="nome" required />
 
-          <label for="convidados">Número de convidados *</label>
-          <input type="number" id="convidados" min="1" max="8" required />
+      <label for="convidados">Número de convidados *</label>
+      <input type="number" id="convidados" min="1" max="8" required />
 
-          <label for="datahora">Data e hora *</label>
-          <input type="datetime-local" id="datahora" required />
+      <label for="datahora">Data e hora *</label>
+      <input type="datetime-local" id="datahora" required />
 
-          <label for="email">Seu e-mail *</label>
-          <input type="email" id="email" required />
+      <label for="email">Seu e-mail *</label>
+      <input type="email" id="email" required />
 
-          <button type="submit">Reservar uma mesa</button>
+      <button type="submit">Reservar uma mesa</button>
 
-          <label class="terms">
-            <input type="checkbox" required />
-            Eu concordo com os termos de uso
-          </label>
-        </form>
-      </section>
-    </main>
+      <label class="terms">
+        <input type="checkbox" required />
+        Eu concordo com os termos de uso
+      </label>
+    </form>
+  </section>
+
+  <section class="contact" id="contatos">
+    <h3>Contatos</h3>
+    <p>Você pode nos encontrar nas redes sociais ou enviar um e-mail para <a href="mailto:contato@tripleespresso.com">contato@tripleespresso.com</a>.</p>
+  </section>
+</main>
+
 
     <footer class="footer">
       <div class="footer-left">
