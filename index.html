@@ -23,8 +23,9 @@
 
     <header class="header">
       <div class="logo">Triple Espresso</div>
-      <nav>
+      <nav aria-label="Navegação principal">
         <ul class="nav-links">
+          <li><a href="#sobre">Sobre</a></li>
           <li><a href="#receitas">Receitas</a></li>
           <li><a href="#reserva">Reservar uma mesa</a></li>
           <li><a href="#contatos">Contatos</a></li>
@@ -33,9 +34,11 @@
     </header>
 
     <main class="content">
-      <section class="lead">
+      <!-- Seção 1: Sobre -->
+      <section class="lead" id="sobre">
+        <h2>Sobre o Triple Espresso</h2>
         <div class="lead-text">
-          <h2><span class="highlight">Café especial</span><br />na biblioteca Triple Peaks</h2>
+          <p><span class="highlight">Café especial</span><br />na biblioteca Triple Peaks</p>
           <p>Esta é nossa zona de estudo! Temos aquele cafezinho para energizar você e vibrações aconchegantes para soltar a criatividade.</p>
           <p class="hours">Horários:<br />Segunda a sexta (10:00 – 19:00)<br />Sábado e domingo (11:00 – 18:00)</p>
         </div>
@@ -44,8 +47,9 @@
         </div>
       </section>
 
+      <!-- Seção 2: Receitas -->
       <section class="recipes" id="receitas">
-        <h3>Receitas</h3>
+        <h2>Receitas</h2>
         <p>Confira algumas receitas que coletamos para seu café:</p>
         <div class="videos">
           <div class="video">
@@ -59,25 +63,26 @@
         </div>
       </section>
 
+      <!-- Seção 3: Reserva -->
       <section class="reservation" id="reserva">
-        <h3>Reservar uma mesa</h3>
+        <h2>Reservar uma mesa</h2>
         <form>
           <label for="nome">Nome *</label>
-          <input type="text" id="nome" required />
+          <input type="text" id="nome" name="nome" required />
 
           <label for="convidados">Número de convidados *</label>
-          <input type="number" id="convidados" min="1" max="8" required />
+          <input type="number" id="convidados" name="convidados" min="1" max="8" required />
 
           <label for="datahora">Data e hora *</label>
-          <input type="datetime-local" id="datahora" required />
+          <input type="datetime-local" id="datahora" name="datahora" required />
 
           <label for="email">Seu e-mail *</label>
-          <input type="email" id="email" required />
+          <input type="email" id="email" name="email" required />
 
           <button type="submit">Reservar uma mesa</button>
 
-          <label class="terms">
-            <input type="checkbox" required />
+          <label class="terms" for="terms">
+            <input type="checkbox" id="terms" name="terms" required />
             Eu concordo com os termos de uso
           </label>
         </form>
@@ -93,7 +98,7 @@
           <p>Endereço: Rua dos Cafés, 123 - Triple Peaks</p>
         </address>
       </div>
-      <div class="footer-right">
+      <div class="footer-right" aria-label="Redes sociais">
         <p>Mídia social</p>
         <ul>
           <li><a href="#">Facebook</a></li>
