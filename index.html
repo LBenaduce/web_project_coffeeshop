@@ -1,21 +1,21 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Triple Espresso: café especial na biblioteca Triple Peaks, com receitas incríveis, ambiente acolhedor e espaço para reservas.">
-  <meta name="author" content="Luigi Benaduce">
-  <meta name="keywords" content="café, receitas de café, cafeteria, Triple Espresso, reservar mesa, biblioteca, café especial, Moka, Ristretto">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Triple Espresso: café especial na biblioteca Triple Peaks, com receitas incríveis, ambiente acolhedor e espaço para reservas." />
+  <meta name="author" content="Luigi Benaduce" />
+  <meta name="keywords" content="café, receitas de café, cafeteria, Triple Espresso, reservar mesa, biblioteca, café especial, Moka, Ristretto" />
 
   <title>Triple Espresso</title>
 
-  <link rel="stylesheet" href="./vendor/normalize.css">
-  <link rel="stylesheet" href="vendor/style.css">
-  <link rel="stylesheet" href="pages/index.css">
+  <link rel="stylesheet" href="./vendor/normalize.css" />
+  <link rel="stylesheet" href="vendor/style.css" />
+  <link rel="stylesheet" href="pages/index.css" />
   
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100..900;1,100..900&family=Noto+Serif:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100..900;1,100..900&family=Noto+Serif:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet" />
 </head>
 
 <body>
@@ -32,67 +32,67 @@
       </nav>
     </header>
 
-   <main class="content">
-  <section class="hero">
-    <div class="hero-text">
-      <h2><span class="highlight">Café especial</span><br />na biblioteca Triple Peaks</h2>
-      <p>Esta é nossa zona de estudo! Temos aquele cafezinho para energizar você e vibrações aconchegantes para soltar a criatividade.</p>
-      <p class="hours">Horários:<br />Segunda a sexta (10:00 – 19:00)<br />Sábado e domingo (11:00 – 18:00)</p>
-    </div>
-    <div class="hero-image">
-      <img src="images/caffè.jpg" alt="Ilustração café" />
-    </div>
-  </section>
+    <main class="content">
+      <section class="hero">
+        <div class="hero-text">
+          <h2><span class="highlight">Café especial</span><br />na biblioteca Triple Peaks</h2>
+          <p>Esta é nossa zona de estudo! Temos aquele cafezinho para energizar você e vibrações aconchegantes para soltar a criatividade.</p>
+          <p class="hours">Horários:<br />Segunda a sexta (10:00 – 19:00)<br />Sábado e domingo (11:00 – 18:00)</p>
+        </div>
+        <div class="hero-image">
+          <img src="images/caffè.jpg" alt="Ilustração de uma xícara de café" />
+        </div>
+      </section>
 
-  <section class="recipes" id="receitas">
-    <h3>Receitas</h3>
-    <p>Confira algumas receitas que coletamos para seu café:</p>
-    <div class="videos">
-      <div class="video">
-        <iframe src="https://www.youtube.com/embed/dWIPmUtAFe0" title="Caffè Ristretto" allowfullscreen></iframe>
-        <p>Caffè Ristretto<br /><small>~5 min</small></p>
-      </div>
-      <div class="video">
-        <iframe src="https://www.youtube.com/embed/SfG1erJg8cI" title="Receita Moka Bialetti" allowfullscreen></iframe>
-        <p>Receita Moka Bialetti<br /><small>~15 min</small></p>
-      </div>
-    </div>
-  </section>
+      <section class="recipes" id="receitas">
+        <h3>Receitas</h3>
+        <p>Confira algumas receitas que coletamos para seu café:</p>
+        <div class="videos">
+          <div class="video">
+            <iframe src="https://www.youtube.com/embed/dWIPmUtAFe0" title="Caffè Ristretto" allowfullscreen></iframe>
+            <p>Caffè Ristretto<br /><small>~5 min</small></p>
+          </div>
+          <div class="video">
+            <iframe src="https://www.youtube.com/embed/SfG1erJg8cI" title="Receita Moka Bialetti" allowfullscreen></iframe>
+            <p>Receita Moka Bialetti<br /><small>~15 min</small></p>
+          </div>
+        </div>
+      </section>
 
-  <section class="reservation" id="reserva">
-    <h3>Reservar uma mesa</h3>
-    <form>
-      <label for="nome">Nome *</label>
-      <input type="text" id="nome" required />
+      <section class="reservation" id="reserva">
+        <h3>Reservar uma mesa</h3>
+        <form>
+          <label for="nome">Nome *</label>
+          <input type="text" id="nome" required />
 
-      <label for="convidados">Número de convidados *</label>
-      <input type="number" id="convidados" min="1" max="8" required />
+          <label for="convidados">Número de convidados *</label>
+          <input type="number" id="convidados" min="1" max="8" required />
 
-      <label for="datahora">Data e hora *</label>
-      <input type="datetime-local" id="datahora" required />
+          <label for="datahora">Data e hora *</label>
+          <input type="datetime-local" id="datahora" required />
 
-      <label for="email">Seu e-mail *</label>
-      <input type="email" id="email" required />
+          <label for="email">Seu e-mail *</label>
+          <input type="email" id="email" required />
 
-      <button type="submit">Reservar uma mesa</button>
+          <button type="submit">Reservar uma mesa</button>
 
-      <label class="terms">
-        <input type="checkbox" required />
-        Eu concordo com os termos de uso
-      </label>
-    </form>
-  </section>
+          <label class="terms">
+            <input type="checkbox" required />
+            Eu concordo com os termos de uso
+          </label>
+        </form>
+      </section>
 
-  <section class="contacts" id="contatos">
-    <h3>Contatos</h3>
-    <p>Entre em contato conosco para dúvidas, sugestões ou parcerias:</p>
-    <ul>
-      <li>Email: <a href="mailto:contato@tripleespresso.com">contato@tripleespresso.com</a></li>
-      <li>Telefone: (11) 1234-5678</li>
-      <li>Endereço: Rua dos Cafés, 123 - Triple Peaks</li>
-    </ul>
-  </section>
-</main>
+      <section class="contacts" id="contatos">
+        <h3>Contatos</h3>
+        <p>Entre em contato conosco para dúvidas, sugestões ou parcerias:</p>
+        <ul>
+          <li>Email: <a href="mailto:contato@tripleespresso.com">contato@tripleespresso.com</a></li>
+          <li>Telefone: (11) 1234-5678</li>
+          <li>Endereço: Rua dos Cafés, 123 - Triple Peaks</li>
+        </ul>
+      </section>
+    </main>
 
     <footer class="footer">
       <div class="footer-left">
@@ -106,6 +106,7 @@
         </ul>
       </div>
     </footer>
+
   </div>
 </body>
 </html>
