@@ -1,19 +1,15 @@
-/* =========================
-   Variáveis
-   ========================= */
+
 :root{
   --brand:#2a60d9;
   --ink:#000;
   --bg:#fff;
-  --dark:#0d1d3b;    /* azul marinho (seções escuras) */
+  --dark:#0d1d3b;    
   --muted:#666;
-  --panel:#f5f5f5;   /* cinza claro (about) */
-  --accent:#d6e7ff;  /* azul claro (reservation) */
+  --panel:#f5f5f5;   
+  --accent:#d6e7ff;  
 }
 
-/* =========================
-   Reset / base
-   ========================= */
+
 *,
 *::before,
 *::after { box-sizing: border-box; }
@@ -44,15 +40,28 @@ h1,h2,h3,h4,h5,h6{
   line-height:1.2;
 }
 
-/* =========================
-   Layout global
-   ========================= */
+
 .page{
   min-height:100dvh;
   display:flex;
   flex-direction:column;
   background:var(--bg);
-}
+
+
+  min-width:320px;          
+  max-width:1280px;
+  margin-left:auto;          
+  margin-right:auto;
+
+  
+  padding-left:1rem;
+  padding-right:1rem;
+
+  
+  font-family:"Inter","Noto Serif",system-ui,-apple-system,"Segoe UI",Roboto,Arial,"Noto Sans","Apple Color Emoji","Segoe UI Emoji",sans-serif; /* FIX */
+  font-size:16px;   /
+  line-height:1.5; 
+
 .content{
   flex:1;
   display:flex;
@@ -62,15 +71,13 @@ h1,h2,h3,h4,h5,h6{
 }
 .content > section{ scroll-margin-top:80px; }
 
-/* =========================
-   Header do SITE (barra topo)
-   ========================= */
-.site-header{
+/* ==== Header do site (tag <header class="header">) ==== */
+.header{
   display:flex;
   flex-direction:column;
   gap:1rem;
   padding:1rem 2rem;
-  background:#fff;   /* garante topo branco */
+  background:#fff;
 }
 .logo{ font-weight:bold; font-size:1.25rem; }
 .nav-links{
@@ -78,27 +85,22 @@ h1,h2,h3,h4,h5,h6{
 }
 .nav-links a{ font-weight:600; }
 
-/* =========================
-   1) HERO dentro do <main>
-   Somente quando <section class="header">
-   ========================= */
+
 section.header{
   display:grid;
   grid-template-columns:1.2fr 1fr;
   align-items:center;
   gap:2rem;
   padding:2.5rem 2rem;
-  background:var(--dark); /* escuro */
+  background:var(--dark);
   color:#fff;
 }
 section.header .lead{ font-size:1.05rem; opacity:.95; }
 section.header .hero-image img{ max-width:420px; border-radius:8px; margin-left:auto; }
 
-/* =========================
-   2) RECEITAS
-   ========================= */
+
 section.recipes, section.receitas{
-  background:var(--dark); /* escuro */
+  background:var(--dark);
   color:#fff;
   padding:2rem;
   text-align:center;
@@ -111,11 +113,9 @@ section.recipes, section.receitas{
   width:100%; aspect-ratio:16/9; height:auto; border:none; border-radius:6px;
 }
 
-/* =========================
-   3) RESERVAS
-   ========================= */
+
 section.reservation, section.reserva{
-  background:var(--accent); /* azul claro */
+  background:var(--accent); 
   padding:2rem;
   text-align:center;
 }
@@ -151,13 +151,11 @@ section.reserva button:focus-visible{ filter:brightness(.95); }
   display:flex; align-items:center; justify-content:center; gap:.5rem; font-size:.9rem;
 }
 
-/* =========================
-   4) ABOUT / SOBRE
-   ========================= */
+
 section.about, section.sobre{
   display:flex; justify-content:space-between; align-items:center;
   gap:2rem; padding:2rem;
-  background:var(--panel); /* cinza claro */
+  background:var(--panel); 
   color:var(--ink);
 }
 .about-text, .sobre-text{ max-width:50%; }
@@ -166,9 +164,7 @@ section.about .about-image img,
 section.sobre .sobre-image img{ width:300px; }
 .hours{ margin-top:1rem; font-size:.9rem; color:#666; }
 
-/* =========================
-   Footer
-   ========================= */
+
 .footer{
   background:var(--dark);
   color:#fff;
@@ -183,9 +179,7 @@ section.sobre .sobre-image img{ width:300px; }
 .contact a{ color:#a3c0ff; text-decoration:none; }
 .contact a:hover, .contact a:focus-visible{ text-decoration:underline; }
 
-/* =========================
-   Responsivo
-   ========================= */
+
 @media (max-width: 1100px){
   section.header{ grid-template-columns:1fr 1fr; }
 }
@@ -195,7 +189,7 @@ section.sobre .sobre-image img{ width:300px; }
   section.about, section.sobre{ padding:1.5rem; }
 }
 @media (max-width: 768px){
-  .site-header{ padding:1rem; }
+  .header{ padding:1rem; }
   .nav-links{ flex-wrap:wrap; gap:1rem; }
 
   section.about, section.sobre{
