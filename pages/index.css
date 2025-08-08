@@ -7,8 +7,8 @@
   --bg:#fff;
   --dark:#0d1d3b;    /* azul marinho (seções escuras) */
   --muted:#666;
-  --panel:#f5f5f5;   /* cinza claro (sobre) */
-  --accent:#d6e7ff;  /* azul claro (reserva) */
+  --panel:#f5f5f5;   /* cinza claro (about) */
+  --accent:#d6e7ff;  /* azul claro (reservation) */
 }
 
 /* =========================
@@ -24,7 +24,7 @@ body{
   margin:0;
   font-family:"Inter", Arial, sans-serif;
   font-size:16px;
-  line-height:1.5;
+  line-height:1.25;
   color:var(--ink);
   background:var(--bg);
 }
@@ -44,21 +44,23 @@ h1,h2,h3,h4,h5,h6{
   line-height:1.2;
 }
 
+/* =========================
+   Layout global
+   ========================= */
+.page{
+  margin-left:auto;
+  margin-right:auto;
+  min-width:1100px;
+  max-width:1600px;
+  font-size:16px;
+  line-height:1.25; /* corrigido */
+  font-family:"Inter","Noto Serif",serif;
 
-.page {
-  margin-left: auto;
-  margin-right: auto;
-  min-width: 1100px;
-  max-width: 1600px;
-  font-size: 16px;
-  line-height: 1.25; 
-  font-family: "Inter", "Noto Serif", serif;
-
-  min-height: 100dvh;
-  display: flex;
-  flex-direction: column;
+  min-height:100dvh;
+  display:flex;
+  flex-direction:column;
+  background:var(--bg);
 }
-
 
 .content{
   flex:1;
@@ -69,15 +71,13 @@ h1,h2,h3,h4,h5,h6{
 }
 .content > section{ scroll-margin-top:80px; }
 
-/* =========================
-   Header do site (tag <header class="header">)
-   ========================= */
+/* Cabeçalho global */
 .header{
   display:flex;
   flex-direction:column;
   gap:1rem;
   padding:1rem 2rem;
-  background:#fff;
+  background:#fff;   
 }
 .logo{ font-weight:bold; font-size:1.25rem; }
 .nav-links{
@@ -86,25 +86,25 @@ h1,h2,h3,h4,h5,h6{
 .nav-links a{ font-weight:600; }
 
 /* =========================
-   Hero (section.header)
+   1) Hero / Início
    ========================= */
-main .header{
+.inicio{
   display:grid;
   grid-template-columns:1.2fr 1fr;
   align-items:center;
   gap:2rem;
   padding:2.5rem 2rem;
-  background:var(--dark);
+  background:var(--dark); 
   color:#fff;
 }
-main .header .lead{ font-size:1.05rem; opacity:.95; }
-main .header .hero-image img{ max-width:420px; border-radius:8px; margin-left:auto; }
+.inicio .lead{ font-size:1.05rem; opacity:.95; }
+.inicio .hero-image img{ max-width:420px; border-radius:8px; margin-left:auto; }
 
 /* =========================
-   Receitas
+   2) Receitas
    ========================= */
 .receitas{
-  background:var(--dark);
+  background:var(--dark); 
   color:#fff;
   padding:2rem;
   text-align:center;
@@ -118,7 +118,7 @@ main .header .hero-image img{ max-width:420px; border-radius:8px; margin-left:au
 }
 
 /* =========================
-   Reserva
+   3) Reserva
    ========================= */
 .reserva{
   background:var(--accent);
@@ -145,13 +145,12 @@ main .header .hero-image img{ max-width:420px; border-radius:8px; margin-left:au
 }
 .reserva button:hover,
 .reserva button:focus-visible{ filter:brightness(.95); }
-
 .terms{
   display:flex; align-items:center; justify-content:center; gap:.5rem; font-size:.9rem;
 }
 
 /* =========================
-   Sobre
+   4) SOBRE
    ========================= */
 .sobre{
   display:flex; justify-content:space-between; align-items:center;
@@ -182,27 +181,24 @@ main .header .hero-image img{ max-width:420px; border-radius:8px; margin-left:au
 .contact a:hover, .contact a:focus-visible{ text-decoration:underline; }
 
 /* =========================
-   Breakpoints
+   Responsividade
    ========================= */
 @media (max-width: 1100px){
-  main .header{ grid-template-columns:1fr 1fr; }
+  .inicio{ grid-template-columns:1fr 1fr; }
 }
 @media (max-width: 992px){
-  main .header{ grid-template-columns:1fr; text-align:center; }
-  main .header .hero-image img{ margin:0 auto; }
+  .inicio{ grid-template-columns:1fr; text-align:center; }
+  .inicio .hero-image img{ margin:0 auto; }
   .sobre{ padding:1.5rem; }
 }
 @media (max-width: 768px){
   .header{ padding:1rem; }
   .nav-links{ flex-wrap:wrap; gap:1rem; }
-
   .sobre{
     flex-direction:column; align-items:center; text-align:center;
   }
   .sobre-text, .sobre-image{ max-width:100%; }
-
   .videos{ flex-direction:column; align-items:center; gap:1rem; }
-
   .footer{
     flex-direction:column; align-items:center; text-align:center; gap:1rem;
   }
