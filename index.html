@@ -1,14 +1,12 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<meta name="author" content="Luigi Benaduce" />
-<meta name="description" content="Triple Espresso — Café especial na biblioteca Triple Peaks. Conheça nossas receitas, horários e faça sua reserva online." />
-<meta name="keywords" content="café, espresso, receitas, cafeteria, triple espresso, biblioteca, reserva de mesa" />
-
+  <meta name="author" content="Luigi Benaduce" />
+  <meta name="description" content="Triple Espresso — Café especial na biblioteca Triple Peaks. Conheça nossas receitas, horários e faça sua reserva online." />
+  <meta name="keywords" content="café, espresso, receitas, cafeteria, triple espresso, biblioteca, reserva de mesa" />
 
   <title>Triple Espresso</title>
 
@@ -23,32 +21,34 @@
 
 <body>
   <div class="page">
-    <header class="header">
+
+    <!-- Cabeçalho do site -->
+    <header class="site-header">
       <div class="logo">Triple Espresso</div>
       <nav aria-label="Navegação principal">
         <ul class="nav-links">
-          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#header">Início</a></li>
           <li><a href="#receitas">Receitas</a></li>
           <li><a href="#reserva">Reservar uma mesa</a></li>
-          <li><a href="#contatos">Contatos</a></li>
+          <li><a href="#sobre">Sobre</a></li>
         </ul>
       </nav>
     </header>
 
     <main class="content">
-      <section class="sobre" id="sobre">
-        <h2>Sobre o Triple Espresso</h2>
-        <div class="sobre-text">
-          <p><span class="highlight">Café especial</span><br>na biblioteca Triple Peaks</p>
-          <p>Café como deve ser! Aproveite um café tradicional preferencialmente sem açúcar!</p>
-          <p class="hours">Horários:<br>Segunda a sexta (10:00 – 19:00)<br>Sábado e domingo (11:00 – 18:00)</p>
+      <!-- 1) Hero / Início -->
+      <section class="header" id="header">
+        <div>
+          <h2>Café especial na Biblioteca Triple Peaks</h2>
+          <p class="lead">Café como deve ser! Aproveite um café tradicional preferencialmente sem açúcar!</p>
         </div>
-        <div class="sobre-image">
-          <img src="images/caffe.jpg" alt="Ilustração de uma xícara de café">
+        <div class="hero-image">
+          <img src="images/caffe.jpg" alt="Xícara de café sobre a mesa">
         </div>
       </section>
 
-      <section class="recipes" id="receitas">
+      <!-- 2) Receitas -->
+      <section class="recipes receitas" id="receitas">
         <h2>Receitas</h2>
         <p>Confira algumas receitas que coletamos para seu café:</p>
         <div class="videos">
@@ -63,7 +63,8 @@
         </div>
       </section>
 
-      <section class="reservation" id="reserva">
+      <!-- 3) Reservas -->
+      <section class="reservation reserva" id="reserva">
         <h2>Reservar uma mesa</h2>
         <form>
           <label for="nome">Nome *</label>
@@ -86,14 +87,28 @@
           </label>
         </form>
       </section>
+
+      <!-- 4) Sobre -->
+      <section class="about sobre" id="sobre">
+        <h2>Sobre o Triple Espresso</h2>
+        <div class="sobre-text">
+          <p><span class="highlight">Café especial</span><br>na biblioteca Triple Peaks</p>
+          <p>Café como deve ser! Aproveite um café tradicional preferencialmente sem açúcar!</p>
+          <p class="hours">Horários:<br>Segunda a sexta (10:00 – 19:00)<br>Sábado e domingo (11:00 – 18:00)</p>
+        </div>
+        <div class="sobre-image">
+          <img src="images/caffe.jpg" alt="Ilustração de uma xícara de café">
+        </div>
+      </section>
     </main>
 
+    <!-- Rodapé -->
     <footer class="footer" id="contatos">
       <div class="footer-left">
         <p>© 2025 Luigi Benaduce</p>
         <address class="contact">
-          <p>Email: <a href="mailto:kuigibenaduce@proton.me">kuigibenaduce@proton.me</a></p>
-          <p>Telefone: (11) 1234-5678</p>
+          <p>Email: <a href="mailto:luigibenaduce@proton.me">luigibenaduce@proton.me</a></p>
+          <p>Telefone: +1 1234-5678</p>
           <p>Endereço: Rua dos Cafés, 123 - Triple Peaks</p>
         </address>
       </div>
@@ -105,6 +120,7 @@
         </ul>
       </div>
     </footer>
+
   </div>
 </body>
 </html>
