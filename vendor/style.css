@@ -69,8 +69,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 600;
 }
 
-/* Seção de destaque (sobre) */
-.lead {
+.sobre {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -79,7 +78,7 @@ h1, h2, h3, h4, h5, h6 {
   background: #f5f5f5;
 }
 
-.lead-text {
+.sobre-text {
   max-width: 50%;
 }
 
@@ -88,7 +87,8 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
 }
 
-.lead-image img {
+.sobre
+.sobre-image img {
   width: 300px;
   max-width: 100%;
   height: auto;
@@ -238,9 +238,9 @@ h1, h2, h3, h4, h5, h6 {
   text-decoration: underline;
 }
 
-/* Responsivo */
+
 @media (max-width: 992px) {
-  .lead {
+  .sobre {
     padding: 1.5rem;
   }
 }
@@ -253,16 +253,17 @@ h1, h2, h3, h4, h5, h6 {
   .nav-links {
     flex-wrap: wrap;
     gap: 1rem;
+    text-shadow: #000;
   }
 
-  .lead {
+  .sobre {
     flex-direction: column;
     align-items: center;
     text-align: center;
   }
 
-  .lead-text,
-  .lead-image {
+  .sobre-text,
+  .sobre-image {
     max-width: 100%;
   }
 
