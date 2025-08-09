@@ -3,137 +3,100 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-
     <meta name="author" content="Luigi Benaduce" />
     <meta name="description" content="Triple Espresso — Café especial na biblioteca Triple Peaks. Conheça nossas receitas, horários e faça sua reserva online." />
-
     <title>Triple Espresso</title>
-
-  
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://unpkg.com/modern-normalize/modern-normalize.css" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Serif:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet" />
-
-   
-    <link rel="stylesheet" href="./vendor/style.css" />
-    <link rel="stylesheet" href="./pages/index.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./index.css" />
   </head>
-
   <body>
     <div class="page">
-      <header class="header">
-        <div class="header__logo">Triple Espresso</div>
-        <nav class="header__nav" aria-label="Navegação principal">
-          <button class="header__menu-toggle" aria-expanded="false" aria-controls="primary-menu">
-            <span class="visually-hidden">Abrir menu</span>☰
-          </button>
-          <ul id="primary-menu" class="header__links">
-            <li><a class="header__link" href="#hero">Início</a></li>
-            <li><a class="header__link" href="#recipes">Receitas</a></li>
-            <li><a class="header__link" href="#reservation">Reservar uma mesa</a></li>
-            <li><a class="header__link" href="#about">Sobre</a></li>
-          </ul>
-        </nav>
+      <header class="topbar">
+        <div class="topbar__inner">
+          <div class="topbar__logo">Triple Espresso</div>
+          <nav class="nav" aria-label="Navegação principal">
+            <button class="nav__menu-toggle" aria-expanded="false" aria-controls="primary-menu">
+              <span class="visually-hidden">Abrir menu</span>☰
+            </button>
+            <ul id="primary-menu" class="nav__links">
+              <li><a class="nav__link" href="#hero">Início</a></li>
+              <li><a class="nav__link" href="#recipes">Receitas</a></li>
+              <li><a class="nav__link" href="#reservation">Reservar uma mesa</a></li>
+              <li><a class="nav__link" href="#about">Sobre</a></li>
+            </ul>
+          </nav>
+        </div>
       </header>
-
       <main class="content">
-        <section class="hero" id="hero">
-          <div class="hero__content">
-            <h1 class="hero__title">
-              <span class="hero__accent">Café especial</span> na Biblioteca Triple Peaks
+        <section class="header" id="hero">
+          <div class="header__container">
+            <h1 class="header__title">
+              <span class="header__span-accent">Café especial</span> na Biblioteca Triple Peaks
             </h1>
-            <p class="hero__description">Café como deve ser! Aproveite um café tradicional preferencialmente sem açúcar!</p>
-            <a class="hero__cta" href="#reservation">Reservar agora</a>
-          </div>
-          <div class="hero__image">
-            <img src="images/caffe.jpg" alt="Xícara de café sobre a mesa" width="1200" height="900" fetchpriority="high" />
+            <p class="header__description">Café como deve ser! Aproveite um café tradicional preferencialmente sem açúcar!</p>
+            <div class="header__footer">
+              <a class="button header__cta" href="#reservation">Reservar agora</a>
+            </div>
+            <div class="header__image" aria-hidden="true">
+              <img src="images/caffe.jpg" alt="" width="1200" height="900" loading="eager" fetchpriority="high" />
+            </div>
           </div>
         </section>
-
         <section class="recipes" id="recipes">
-          <h2 class="recipes__title">Receitas</h2>
-          <p class="recipes__subtitle">Confira algumas receitas que coletamos para seu café:</p>
-          <div class="recipes__videos">
-            <div class="recipes__video-item">
-              <div class="recipes__video-aspect">
-                <iframe
-                  class="recipes__iframe"
-                  src="https://www.youtube.com/embed/dWIPmUtAFe0"
-                  title="Caffè Ristretto"
-                  loading="lazy"
-                  referrerpolicy="strict-origin-when-cross-origin"
-                  allowfullscreen
-                ></iframe>
+          <div class="recipes__inner">
+            <h2 class="recipes__title">Receitas</h2>
+            <p class="recipes__subtitle">Confira algumas receitas que coletamos para seu café:</p>
+            <div class="recipes__videos">
+              <div class="recipes__video-item">
+                <div class="recipes__video-aspect">
+                  <iframe class="recipes__iframe" src="https://www.youtube.com/embed/dWIPmUtAFe0" title="Caffè Ristretto" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <p class="recipes__video-caption">Caffè Ristretto<br /><small>~5 min</small></p>
               </div>
-              <p class="recipes__video-caption">Caffè Ristretto<br /><small>~5 min</small></p>
-            </div>
-
-            <div class="recipes__video-item">
-              <div class="recipes__video-aspect">
-                <iframe
-                  class="recipes__iframe"
-                  src="https://www.youtube.com/embed/SfG1erJg8cI"
-                  title="Receita Moka Bialetti"
-                  loading="lazy"
-                  referrerpolicy="strict-origin-when-cross-origin"
-                  allowfullscreen
-                ></iframe>
+              <div class="recipes__video-item">
+                <div class="recipes__video-aspect">
+                  <iframe class="recipes__iframe" src="https://www.youtube.com/embed/SfG1erJg8cI" title="Receita Moka Bialetti" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <p class="recipes__video-caption">Receita Moka Bialetti<br /><small>~15 min</small></p>
               </div>
-              <p class="recipes__video-caption">Receita Moka Bialetti<br /><small>~15 min</small></p>
             </div>
           </div>
         </section>
-
         <section class="reservation" id="reservation">
           <h2 class="reservation__title">Reservar uma mesa</h2>
-
           <form class="reservation__form" action="/reservas" method="post" novalidate>
             <fieldset class="reservation__fieldset">
               <legend class="reservation__legend">Detalhes da reserva</legend>
-
               <div class="reservation__field">
                 <label class="reservation__label" for="nome">Nome *</label>
                 <input class="reservation__input" type="text" id="nome" name="nome" autocomplete="name" required />
               </div>
-
               <div class="reservation__field">
                 <label class="reservation__label" for="convidados">Número de convidados *</label>
                 <input class="reservation__input" type="number" id="convidados" name="convidados" min="1" max="8" inputmode="numeric" required />
               </div>
-
               <div class="reservation__field">
                 <label class="reservation__label" for="datahora">Data e hora *</label>
-                <input
-                  class="reservation__input"
-                  type="datetime-local"
-                  id="datahora"
-                  name="datahora"
-                  step="1800"
-                  required
-                  aria-describedby="hours-help"
-                />
-                <small id="hours-help" class="reservation__help">
-                  Seg–Sex 10:00–19:00 · Sáb–Dom 11:00–18:00
-                </small>
+                <input class="reservation__input" type="datetime-local" id="datahora" name="datahora" step="1800" required aria-describedby="hours-help" />
+                <small id="hours-help" class="reservation__help">Seg–Sex 10:00–19:00 · Sáb–Dom 11:00–18:00</small>
               </div>
-
               <div class="reservation__field">
                 <label class="reservation__label" for="email">Seu e-mail *</label>
                 <input class="reservation__input" type="email" id="email" name="email" autocomplete="email" required />
               </div>
-
               <div class="reservation__field reservation__field--checkbox">
                 <input class="reservation__checkbox" type="checkbox" id="terms" name="terms" required />
                 <label class="reservation__checkbox-label" for="terms">Eu concordo com os termos de uso</label>
               </div>
-
-              <button class="reservation__button" type="submit">Reservar uma mesa</button>
+              <button class="button reservation__button" type="submit">Reservar uma mesa</button>
               <div class="reservation__errors" aria-live="polite"></div>
             </fieldset>
           </form>
         </section>
-
         <section class="about" id="about">
           <h2 class="about__title">Sobre o Triple Espresso</h2>
           <div class="about__grid">
@@ -148,9 +111,8 @@
           </div>
         </section>
       </main>
-
       <footer class="footer" id="contatos">
-        <div class="footer__left">
+        <div class="footer__col">
           <p>© 2025 Luigi Benaduce</p>
           <address class="footer__contact">
             <p>Email: <a href="mailto:luigibenaduce@proton.me">luigibenaduce@proton.me</a></p>
@@ -158,7 +120,7 @@
             <p>Endereço: Rua dos Cafés, 123 — Triple Peaks</p>
           </address>
         </div>
-        <div class="footer__right" aria-label="Redes sociais">
+        <div class="footer__col" aria-label="Redes sociais">
           <p>Mídia social</p>
           <ul class="footer__social">
             <li><a href="#" rel="me noopener">Facebook</a></li>
@@ -167,11 +129,9 @@
         </div>
       </footer>
     </div>
-
     <script>
-      const btn = document.querySelector('.header__menu-toggle');
+      const btn = document.querySelector('.nav__menu-toggle');
       const list = document.getElementById('primary-menu');
-
       if (btn && list) {
         btn.addEventListener('click', () => {
           const open = btn.getAttribute('aria-expanded') === 'true';
