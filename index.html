@@ -21,29 +21,30 @@
 
 <body>
   <div class="page">
-    <!-- Topbar (classe diferente de .header para evitar conflito com a seção hero) -->
-    <header class="site-header">
-      <div class="logo">Triple Espresso</div>
-      <nav aria-label="Navegação principal">
-        <ul class="nav__links">
-          <li><a class="nav__link" href="#hero">Início</a></li>
-          <li><a class="nav__link" href="#recipes">Receitas</a></li>
-          <li><a class="nav__link" href="#reservation">Reservar uma mesa</a></li>
-          <li><a class="nav__link" href="#about">Sobre</a></li>
+
+    <!-- Bloco BEM: header -->
+    <header class="header">
+      <div class="header__logo">Triple Espresso</div>
+      <nav class="header__nav" aria-label="Navegação principal">
+        <ul class="header__links">
+          <li><a class="header__link" href="#hero">Início</a></li>
+          <li><a class="header__link" href="#recipes">Receitas</a></li>
+          <li><a class="header__link" href="#reservation">Reservar uma mesa</a></li>
+          <li><a class="header__link" href="#about">Sobre</a></li>
         </ul>
       </nav>
     </header>
 
     <main class="content">
-      <!-- 1) Seção principal / Hero -->
-      <section class="header" id="hero">
+      <!-- 1) Hero (bloco próprio, não usa .header pra evitar conflito) -->
+      <section class="hero" id="hero">
         <div>
-          <h1 class="header__title">
-            <span class="header__span-accent">Café especial</span> na Biblioteca Triple Peaks
+          <h1 class="hero__title">
+            <span class="hero__accent">Café especial</span> na Biblioteca Triple Peaks
           </h1>
-          <p class="header__description">Café como deve ser! Aproveite um café tradicional preferencialmente sem açúcar!</p>
+          <p class="hero__description">Café como deve ser! Aproveite um café tradicional preferencialmente sem açúcar!</p>
         </div>
-        <div class="header__image">
+        <div class="hero__image">
           <img src="images/caffe.jpg" alt="Xícara de café sobre a mesa">
         </div>
       </section>
@@ -120,6 +121,7 @@
         </ul>
       </div>
     </footer>
+
   </div>
 </body>
 </html>
