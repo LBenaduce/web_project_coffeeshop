@@ -21,52 +21,53 @@
 
 <body>
   <div class="page">
-
-    <!-- Cabeçalho global -->
-    <header class="header">
+    <!-- Topbar (classe diferente de .header para evitar conflito com a seção hero) -->
+    <header class="site-header">
       <div class="logo">Triple Espresso</div>
       <nav aria-label="Navegação principal">
-        <ul class="nav-links">
-          <li><a href="#header">Início</a></li>
-          <li><a href="#receitas">Receitas</a></li>
-          <li><a href="#reserva">Reservar uma mesa</a></li>
-          <li><a href="#sobre">Sobre</a></li>
+        <ul class="nav__links">
+          <li><a class="nav__link" href="#hero">Início</a></li>
+          <li><a class="nav__link" href="#recipes">Receitas</a></li>
+          <li><a class="nav__link" href="#reservation">Reservar uma mesa</a></li>
+          <li><a class="nav__link" href="#about">Sobre</a></li>
         </ul>
       </nav>
     </header>
 
     <main class="content">
-      <!-- 1) Seção de abertura / hero -->
-      <section class="inicio" id="header">
+      <!-- 1) Seção principal / Hero -->
+      <section class="header" id="hero">
         <div>
-          <h2>Café especial na Biblioteca Triple Peaks</h2>
-          <p class="lead">Café como deve ser! Aproveite um café tradicional preferencialmente sem açúcar!</p>
+          <h1 class="header__title">
+            <span class="header__span-accent">Café especial</span> na Biblioteca Triple Peaks
+          </h1>
+          <p class="header__description">Café como deve ser! Aproveite um café tradicional preferencialmente sem açúcar!</p>
         </div>
-        <div class="hero-image">
+        <div class="header__image">
           <img src="images/caffe.jpg" alt="Xícara de café sobre a mesa">
         </div>
       </section>
 
       <!-- 2) Receitas -->
-      <section class="receitas" id="receitas">
-        <h2>Receitas</h2>
-        <p>Confira algumas receitas que coletamos para seu café:</p>
-        <div class="videos">
-          <div class="video">
-            <iframe src="https://www.youtube.com/embed/dWIPmUtAFe0" title="Caffè Ristretto" allowfullscreen></iframe>
-            <p>Caffè Ristretto<br><small>~5 min</small></p>
+      <section class="recipes" id="recipes">
+        <h2 class="recipes__title">Receitas</h2>
+        <p class="recipes__subtitle">Confira algumas receitas que coletamos para seu café:</p>
+        <div class="recipes__videos">
+          <div class="recipes__video-item">
+            <iframe class="recipes__iframe" src="https://www.youtube.com/embed/dWIPmUtAFe0" title="Caffè Ristretto" allowfullscreen></iframe>
+            <p class="recipes__video-caption">Caffè Ristretto<br><small>~5 min</small></p>
           </div>
-          <div class="video">
-            <iframe src="https://www.youtube.com/embed/SfG1erJg8cI" title="Receita Moka Bialetti" allowfullscreen></iframe>
-            <p>Receita Moka Bialetti<br><small>~15 min</small></p>
+          <div class="recipes__video-item">
+            <iframe class="recipes__iframe" src="https://www.youtube.com/embed/SfG1erJg8cI" title="Receita Moka Bialetti" allowfullscreen></iframe>
+            <p class="recipes__video-caption">Receita Moka Bialetti<br><small>~15 min</small></p>
           </div>
         </div>
       </section>
 
       <!-- 3) Reservas -->
-      <section class="reserva" id="reserva">
-        <h2>Reservar uma mesa</h2>
-        <form>
+      <section class="reservation" id="reservation">
+        <h2 class="reservation__title">Reservar uma mesa</h2>
+        <form class="reservation__form">
           <label for="nome">Nome *</label>
           <input type="text" id="nome" name="nome" required>
 
@@ -89,20 +90,19 @@
       </section>
 
       <!-- 4) Sobre -->
-      <section class="sobre" id="sobre">
-        <h2>Sobre o Triple Espresso</h2>
-        <div class="sobre-text">
+      <section class="about" id="about">
+        <h2 class="about__title">Sobre o Triple Espresso</h2>
+        <div class="about__text">
           <p><span class="highlight">Café especial</span><br>na biblioteca Triple Peaks</p>
           <p>Café como deve ser! Aproveite um café tradicional preferencialmente sem açúcar!</p>
-          <p class="hours">Horários:<br>Segunda a sexta (10:00 – 19:00)<br>Sábado e domingo (11:00 – 18:00)</p>
+          <p class="about__hours">Horários:<br>Segunda a sexta (10:00 – 19:00)<br>Sábado e domingo (11:00 – 18:00)</p>
         </div>
-        <div class="sobre-image">
+        <div class="about__image">
           <img src="images/caffe.jpg" alt="Ilustração de uma xícara de café">
         </div>
       </section>
     </main>
 
-    <!-- Rodapé -->
     <footer class="footer" id="contatos">
       <div class="footer-left">
         <p>© 2025 Luigi Benaduce</p>
@@ -120,7 +120,6 @@
         </ul>
       </div>
     </footer>
-
   </div>
 </body>
 </html>
