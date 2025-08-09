@@ -27,7 +27,7 @@
       <div class="header__logo">Triple Espresso</div>
       <nav class="header__nav" aria-label="Navegação principal">
         <ul class="header__links">
-          <li><a class="header__link" href="#header">Início</a></li>
+          <li><a class="header__link" href="#hero">Início</a></li>
           <li><a class="header__link" href="#recipes">Receitas</a></li>
           <li><a class="header__link" href="#reservation">Reservar uma mesa</a></li>
           <li><a class="header__link" href="#about">Sobre</a></li>
@@ -35,22 +35,24 @@
       </nav>
     </header>
 
-    <!-- Conteúdo principal: seções são filhas diretas de <main> -->
+    <!-- Conteúdo principal: seções filhas diretas -->
     <main>
-      <!-- 1) Seção "header" (hero) -->
-      <section class="header" id="header">
-        <div>
-          <h2 class="section-title">Café especial na Biblioteca Triple Peaks</h2>
-          <p class="lead">Café como deve ser! Aproveite um café tradicional preferencialmente sem açúcar!</p>
+      <!-- 1) Hero -->
+      <section class="hero" id="hero">
+        <div class="hero__content">
+          <h1 class="hero__title">
+            <span class="hero__accent">Café especial</span> na Biblioteca Triple Peaks
+          </h1>
+          <p class="hero__description">Café como deve ser! Aproveite um café tradicional preferencialmente sem açúcar!</p>
         </div>
-        <div class="hero-image">
+        <div class="hero__image">
           <img src="images/caffe.jpg" alt="Xícara de café sobre a mesa">
         </div>
       </section>
 
       <!-- 2) Receitas -->
       <section class="recipes" id="recipes">
-        <h2 class="section-title">Receitas</h2>
+        <h2 class="recipes__title">Receitas</h2>
         <p class="recipes__subtitle">Confira algumas receitas que coletamos para seu café:</p>
         <div class="recipes__videos">
           <div class="recipes__video-item">
@@ -66,7 +68,7 @@
 
       <!-- 3) Reservas -->
       <section class="reservation" id="reservation">
-        <h2 class="section-title">Reservar uma mesa</h2>
+        <h2 class="reservation__title">Reservar uma mesa</h2>
         <form class="reservation__form">
           <label for="nome">Nome *</label>
           <input type="text" id="nome" name="nome" required>
@@ -91,7 +93,7 @@
 
       <!-- 4) Sobre -->
       <section class="about" id="about">
-        <h2 class="section-title">Sobre o Triple Espresso</h2>
+        <h2 class="about__title">Sobre o Triple Espresso</h2>
         <div class="about__text">
           <p><span class="highlight">Café especial</span><br>na biblioteca Triple Peaks</p>
           <p>Café como deve ser! Aproveite um café tradicional preferencialmente sem açúcar!</p>
