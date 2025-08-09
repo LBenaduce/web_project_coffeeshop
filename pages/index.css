@@ -184,7 +184,7 @@
   margin-bottom: 14px;
 }
 
-.reservation__field--checkbox {
+.reservation__field_type_checkbox {
   grid-template-columns: auto 1fr;
   align-items: center;
 }
