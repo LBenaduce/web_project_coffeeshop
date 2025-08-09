@@ -1,125 +1,184 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <meta name="author" content="Luigi Benaduce" />
-  <meta name="description" content="Triple Espresso — Café especial na biblioteca Triple Peaks. Conheça nossas receitas, horários e faça sua reserva online." />
-  <meta name="keywords" content="café, espresso, receitas, cafeteria, triple espresso, biblioteca, reserva de mesa" />
+    <meta name="author" content="Luigi Benaduce" />
+    <meta name="description" content="Triple Espresso — Café especial na biblioteca Triple Peaks. Conheça nossas receitas, horários e faça sua reserva online." />
 
-  <title>Triple Espresso</title>
-
-  <link rel="stylesheet" href="./vendor/normalize.css" />
-  <link rel="stylesheet" href="./vendor/style.css" />
-  <link rel="stylesheet" href="./pages/index.css" />
-
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100..900;1,100..900&family=Noto+Serif:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet" />
-</head>
-
-<body>
-  <div class="page">
+    <title>Triple Espresso</title>
 
   
-    <header class="header">
-      <div class="header__logo">Triple Espresso</div>
-      <nav class="header__nav" aria-label="Navegação principal">
-        <ul class="header__links">
-          <li><a class="header__link" href="#hero">Início</a></li>
-          <li><a class="header__link" href="#recipes">Receitas</a></li>
-          <li><a class="header__link" href="#reservation">Reservar uma mesa</a></li>
-          <li><a class="header__link" href="#about">Sobre</a></li>
-        </ul>
-      </nav>
-    </header>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://unpkg.com/modern-normalize/modern-normalize.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Serif:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet" />
 
-    <main class="content">
-      <section class="hero" id="hero">
-        <div class="hero__content">
-          <h1 class="hero__title">
-            <span class="hero__accent">Café especial</span> na Biblioteca Triple Peaks
-          </h1>
-          <p class="hero__description">Café como deve ser! Aproveite um café tradicional preferencialmente sem açúcar!</p>
-        </div>
-        <div class="hero__image">
-          <img src="images/caffe.jpg" alt="Xícara de café sobre a mesa">
-        </div>
-      </section>
+   
+    <link rel="stylesheet" href="./vendor/style.css" />
+    <link rel="stylesheet" href="./pages/index.css" />
+  </head>
 
-      <!-- 2) Receitas -->
-      <section class="recipes" id="recipes">
-        <h2 class="recipes__title">Receitas</h2>
-        <p class="recipes__subtitle">Confira algumas receitas que coletamos para seu café:</p>
-        <div class="recipes__videos">
-          <div class="recipes__video-item">
-            <iframe class="recipes__iframe" src="https://www.youtube.com/embed/dWIPmUtAFe0" title="Caffè Ristretto" allowfullscreen></iframe>
-            <p class="recipes__video-caption">Caffè Ristretto<br><small>~5 min</small></p>
+  <body>
+    <div class="page">
+      <header class="header">
+        <div class="header__logo">Triple Espresso</div>
+        <nav class="header__nav" aria-label="Navegação principal">
+          <button class="header__menu-toggle" aria-expanded="false" aria-controls="primary-menu">
+            <span class="visually-hidden">Abrir menu</span>☰
+          </button>
+          <ul id="primary-menu" class="header__links">
+            <li><a class="header__link" href="#hero">Início</a></li>
+            <li><a class="header__link" href="#recipes">Receitas</a></li>
+            <li><a class="header__link" href="#reservation">Reservar uma mesa</a></li>
+            <li><a class="header__link" href="#about">Sobre</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <main class="content">
+        <section class="hero" id="hero">
+          <div class="hero__content">
+            <h1 class="hero__title">
+              <span class="hero__accent">Café especial</span> na Biblioteca Triple Peaks
+            </h1>
+            <p class="hero__description">Café como deve ser! Aproveite um café tradicional preferencialmente sem açúcar!</p>
+            <a class="hero__cta" href="#reservation">Reservar agora</a>
           </div>
-          <div class="recipes__video-item">
-            <iframe class="recipes__iframe" src="https://www.youtube.com/embed/SfG1erJg8cI" title="Receita Moka Bialetti" allowfullscreen></iframe>
-            <p class="recipes__video-caption">Receita Moka Bialetti<br><small>~15 min</small></p>
+          <div class="hero__image">
+            <img src="images/caffe.jpg" alt="Xícara de café sobre a mesa" width="1200" height="900" fetchpriority="high" />
           </div>
+        </section>
+
+        <section class="recipes" id="recipes">
+          <h2 class="recipes__title">Receitas</h2>
+          <p class="recipes__subtitle">Confira algumas receitas que coletamos para seu café:</p>
+          <div class="recipes__videos">
+            <div class="recipes__video-item">
+              <div class="recipes__video-aspect">
+                <iframe
+                  class="recipes__iframe"
+                  src="https://www.youtube.com/embed/dWIPmUtAFe0"
+                  title="Caffè Ristretto"
+                  loading="lazy"
+                  referrerpolicy="strict-origin-when-cross-origin"
+                  allowfullscreen
+                ></iframe>
+              </div>
+              <p class="recipes__video-caption">Caffè Ristretto<br /><small>~5 min</small></p>
+            </div>
+
+            <div class="recipes__video-item">
+              <div class="recipes__video-aspect">
+                <iframe
+                  class="recipes__iframe"
+                  src="https://www.youtube.com/embed/SfG1erJg8cI"
+                  title="Receita Moka Bialetti"
+                  loading="lazy"
+                  referrerpolicy="strict-origin-when-cross-origin"
+                  allowfullscreen
+                ></iframe>
+              </div>
+              <p class="recipes__video-caption">Receita Moka Bialetti<br /><small>~15 min</small></p>
+            </div>
+          </div>
+        </section>
+
+        <section class="reservation" id="reservation">
+          <h2 class="reservation__title">Reservar uma mesa</h2>
+
+          <form class="reservation__form" action="/reservas" method="post" novalidate>
+            <fieldset class="reservation__fieldset">
+              <legend class="reservation__legend">Detalhes da reserva</legend>
+
+              <div class="reservation__field">
+                <label class="reservation__label" for="nome">Nome *</label>
+                <input class="reservation__input" type="text" id="nome" name="nome" autocomplete="name" required />
+              </div>
+
+              <div class="reservation__field">
+                <label class="reservation__label" for="convidados">Número de convidados *</label>
+                <input class="reservation__input" type="number" id="convidados" name="convidados" min="1" max="8" inputmode="numeric" required />
+              </div>
+
+              <div class="reservation__field">
+                <label class="reservation__label" for="datahora">Data e hora *</label>
+                <input
+                  class="reservation__input"
+                  type="datetime-local"
+                  id="datahora"
+                  name="datahora"
+                  step="1800"
+                  required
+                  aria-describedby="hours-help"
+                />
+                <small id="hours-help" class="reservation__help">
+                  Seg–Sex 10:00–19:00 · Sáb–Dom 11:00–18:00
+                </small>
+              </div>
+
+              <div class="reservation__field">
+                <label class="reservation__label" for="email">Seu e-mail *</label>
+                <input class="reservation__input" type="email" id="email" name="email" autocomplete="email" required />
+              </div>
+
+              <div class="reservation__field reservation__field--checkbox">
+                <input class="reservation__checkbox" type="checkbox" id="terms" name="terms" required />
+                <label class="reservation__checkbox-label" for="terms">Eu concordo com os termos de uso</label>
+              </div>
+
+              <button class="reservation__button" type="submit">Reservar uma mesa</button>
+              <div class="reservation__errors" aria-live="polite"></div>
+            </fieldset>
+          </form>
+        </section>
+
+        <section class="about" id="about">
+          <h2 class="about__title">Sobre o Triple Espresso</h2>
+          <div class="about__grid">
+            <div class="about__text">
+              <p><span class="highlight">Café especial</span><br />na biblioteca Triple Peaks</p>
+              <p>Café como deve ser! Aproveite um café tradicional preferencialmente sem açúcar!</p>
+              <p class="about__hours">Horários:<br />Segunda a sexta (10:00 – 19:00)<br />Sábado e domingo (11:00 – 18:00)</p>
+            </div>
+            <div class="about__image">
+              <img src="images/caffe.jpg" alt="" width="900" height="700" loading="lazy" />
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer" id="contatos">
+        <div class="footer__left">
+          <p>© 2025 Luigi Benaduce</p>
+          <address class="footer__contact">
+            <p>Email: <a href="mailto:luigibenaduce@proton.me">luigibenaduce@proton.me</a></p>
+            <p>Telefone: <a href="tel:+112345678">+1 1234-5678</a></p>
+            <p>Endereço: Rua dos Cafés, 123 — Triple Peaks</p>
+          </address>
         </div>
-      </section>
-
-      <!-- 3) Reservas -->
-      <section class="reservation" id="reservation">
-        <h2 class="reservation__title">Reservar uma mesa</h2>
-        <form class="reservation__form">
-          <label for="nome">Nome *</label>
-          <input type="text" id="nome" name="nome" required>
-
-          <label for="convidados">Número de convidados *</label>
-          <input type="number" id="convidados" name="convidados" min="1" max="8" required>
-
-          <label for="datahora">Data e hora *</label>
-          <input type="datetime-local" id="datahora" name="datahora" required>
-
-          <label for="email">Seu e-mail *</label>
-          <input type="email" id="email" name="email" required>
-
-          <button type="submit">Reservar uma mesa</button>
-
-          <label class="terms" for="terms">
-            <input type="checkbox" id="terms" name="terms" required>
-            Eu concordo com os termos de uso
-          </label>
-        </form>
-      </section>
-
-      <section class="about" id="about">
-        <h2 class="about__title">Sobre o Triple Espresso</h2>
-        <div class="about__text">
-          <p><span class="highlight">Café especial</span><br>na biblioteca Triple Peaks</p>
-          <p>Café como deve ser! Aproveite um café tradicional preferencialmente sem açúcar!</p>
-          <p class="about__hours">Horários:<br>Segunda a sexta (10:00 – 19:00)<br>Sábado e domingo (11:00 – 18:00)</p>
+        <div class="footer__right" aria-label="Redes sociais">
+          <p>Mídia social</p>
+          <ul class="footer__social">
+            <li><a href="#" rel="me noopener">Facebook</a></li>
+            <li><a href="#" rel="me noopener">Instagram</a></li>
+          </ul>
         </div>
-        <div class="about__image">
-          <img src="images/caffe.jpg" alt="Ilustração de uma xícara de café">
-        </div>
-      </section>
-    </main>
+      </footer>
+    </div>
 
-    <footer class="footer" id="contatos">
-      <div class="footer-left">
-        <p>© 2025 Luigi Benaduce</p>
-        <address class="contact">
-          <p>Email: <a href="mailto:luigibenaduce@proton.me">luigibenaduce@proton.me</a></p>
-          <p>Telefone: +1 1234-5678</p>
-          <p>Endereço: Rua dos Cafés, 123 - Triple Peaks</p>
-        </address>
-      </div>
-      <div class="footer-right" aria-label="Redes sociais">
-        <p>Mídia social</p>
-        <ul>
-          <li><a href="#">Facebook</a></li>
-          <li><a href="#">Instagram</a></li>
-        </ul>
-      </div>
-    </footer>
+    <script>
+      const btn = document.querySelector('.header__menu-toggle');
+      const list = document.getElementById('primary-menu');
 
-  </div>
-</body>
+      if (btn && list) {
+        btn.addEventListener('click', () => {
+          const open = btn.getAttribute('aria-expanded') === 'true';
+          btn.setAttribute('aria-expanded', String(!open));
+          list.classList.toggle('is-open', !open);
+        });
+      }
+    </script>
+  </body>
 </html>
