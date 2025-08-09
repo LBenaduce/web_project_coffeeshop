@@ -1,287 +1,240 @@
-.header {
-  position: relative;
-  min-height: 100vh;
+/* ===== Navegação (bloco nav) ===== */
+.nav__links{
+  list-style: none;
   display: flex;
-  align-items: stretch;
-  background: url("images/background_header.svg") center / cover no-repeat, #ffffff;
-}
-
-.header__container {
-  position: relative;
-  max-width: var(--max);
-  margin: 0 auto;
-  padding: var(--space-16) 20px;
-  display: flex;
-  flex-direction: column;
-  gap: var(--space-5);
-}
-
-.header__title {
-  font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
-  font-size: clamp(36px, 6vw, 58px);
-  line-height: clamp(42px, 7vw, 72px);
-  letter-spacing: -1px;
-  margin: 0;
-  max-width: 18ch;
-  color: var(--text);
-}
-
-.header__span-accent {
-  font-family: "Noto Serif", serif;
-  font-style: italic;
-  color: var(--accent);
-}
-
-.header__description {
-  color: var(--muted-2);
-  max-width: 60ch;
-  margin: 0;
-}
-
-.header__footer {
-  margin-top: auto;
-}
-
-.header__image {
-  position: absolute;
-  right: 20px;
-  bottom: 20px;
-  width: min(44vw, 560px);
-  aspect-ratio: 4 / 3;
-  border-radius: var(--radius);
-  overflow: hidden;
-  box-shadow: 0 16px 48px rgba(0, 0, 0, 0.25);
-}
-
-.header__image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-  transform: translateZ(0);
-}
-
-@media (max-width: 1024px) {
-  .header__image {
-    width: min(52vw, 520px);
-    right: 16px;
-    bottom: 16px;
-  }
-}
-
-@media (max-width: 768px) {
-  .header {
-    background: url("images/background_header.svg") center top / cover no-repeat, #ffffff;
-  }
-  .header__container {
-    padding-top: var(--space-12);
-    padding-bottom: var(--space-12);
-  }
-  .header__image {
-    position: static;
-    width: 100%;
-    max-width: 640px;
-    margin-top: var(--space-6);
-  }
-}
-
-.recipes {
-  color: var(--text-inverse);
-  background: url("images/background_recipes.svg") center / cover no-repeat, var(--brand-dark);
-}
-
-.recipes__inner {
-  max-width: var(--max);
-  margin: 0 auto;
-  padding: var(--space-16) 20px;
-}
-
-.recipes__title {
-  font-family: "Noto Serif", serif;
-  font-size: 28px;
-  margin: 0 0 6px;
-  color: var(--text-inverse);
-}
-
-.recipes__subtitle {
-  color: rgba(255, 255, 255, 0.85);
-  margin: 0 0 18px;
-}
-
-.recipes__videos {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: var(--gap);
-}
-
-.recipes__video-item {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-
-.recipes__video-aspect {
-  position: relative;
-  width: 100%;
-  aspect-ratio: 16 / 9;
-  overflow: hidden;
-  border-radius: 14px;
-  border: 1px solid rgba(255, 255, 255, 0.25);
-  background: rgba(255, 255, 255, 0.05);
-}
-
-.recipes__iframe {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  border: 0;
-}
-
-.recipes__video-caption {
-  color: rgba(255, 255, 255, 0.85);
-  margin: 0;
-}
-
-@media (max-width: 768px) {
-  .recipes__videos {
-    grid-template-columns: 1fr;
-  }
-}
-
-.reservation {
-  max-width: 760px;
-  margin: var(--space-16) auto 0;
-  padding: 0 20px;
-}
-
-.reservation__title {
-  font-family: "Noto Serif", serif;
-  font-size: 28px;
-  margin: 0 0 14px;
-}
-
-.reservation__fieldset {
-  border: none;
-  padding: 22px;
-  margin: 0;
-  background: var(--surface);
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
-  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.06);
-}
-
-.reservation__legend {
-  font-weight: 600;
-  margin: 0 0 10px;
-}
-
-.reservation__field {
-  display: grid;
-  grid-template-columns: 180px 1fr;
-  gap: 14px;
-  align-items: center;
-  margin-bottom: 14px;
-}
-
-.reservation__field_type_checkbox {
-  grid-template-columns: auto 1fr;
-  align-items: center;
-}
-
-.reservation__label {
-  color: var(--text);
-}
-
-.reservation__input,
-.reservation__checkbox {
-  background: var(--bg-input);
-  color: var(--text);
-  border: 1px solid var(--border);
-  border-radius: 12px;
-  padding: 12px 14px;
-  font: inherit;
-  width: 100%;
-}
-
-.reservation__checkbox {
-  width: auto;
-  height: auto;
+  gap: 24px;
   padding: 0;
-  border-radius: 6px;
+  margin: 0;
 }
+.nav__link{ font-weight: 600; }
 
-.reservation__checkbox-label {
-  color: var(--muted-2);
-}
-
-.reservation__help {
-  color: var(--muted-2);
-  display: block;
-  margin-top: 6px;
-}
-
-.reservation__button {
-  margin-top: 6px;
-}
-
-.reservation__errors {
-  min-height: 20px;
-  color: #c0392b;
-  margin-top: 10px;
-}
-
-@media (max-width: 768px) {
-  .reservation__field {
-    grid-template-columns: 1fr;
-  }
-  .reservation__label {
-    font-weight: 600;
-  }
-}
-
-.about {
-  max-width: var(--max);
-  margin: var(--space-16) auto 0;
-  padding: 0 20px;
-}
-
-.about__title {
-  font-family: "Noto Serif", serif;
-  font-size: 28px;
-  margin: 0 0 14px;
-}
-
-.about__grid {
+/* ===== HEADER (hero dentro do header) ===== */
+.header{
+  padding: 32px 40px;
+  background: #fff;
   display: grid;
-  grid-template-columns: 1.1fr 0.9fr;
-  gap: var(--gap);
+  grid-template-columns: 1.2fr 1fr;
+  grid-template-areas:
+    "logo    image"
+    "nav     image"
+    "title   image"
+    "desc    image"
+    "footer  image";
+  gap: 16px 32px;
   align-items: center;
 }
-
-.about__text {
-  font-size: 18px;
+.header__logo{ grid-area: logo; font-weight: 700; font-size: 20px; }
+.nav{ grid-area: nav; }
+.header__title{
+  grid-area: title;
+  margin: 0;
+  font-size: 40px;         /* 44/52 no roteiro? ajuste se exigido */
+  line-height: 1.2;
 }
-
-.highlight {
-  color: var(--accent);
-  font-weight: 700;
-  font-family: "Noto Serif", serif;
+.header__span-accent{ color: var(--accent); }
+.header__description{
+  grid-area: desc;
+  font-size: 20px;         /* 20/30 sugerido no roteiro */
+  line-height: 30px;
+  margin: 0;
 }
-
-.about__hours {
+.header__footer{ grid-area: footer; }
+.header__paragraph{
+  margin: 0;
+  font-size: 16px;         /* 16/20 base */
+  line-height: 20px;
   color: var(--muted);
 }
-
-.about__image img {
-  border-radius: var(--radius);
-  border: 1px solid var(--border);
-  aspect-ratio: 9 / 7;
-  object-fit: cover;
+.header__image{
+  grid-area: image;
+  max-width: 440px;
+  width: 100%;
+  border-radius: 12px;
+  justify-self: end;
 }
 
-@media (max-width: 1024px) {
-  .about__grid {
+/* ancoragem suave: deixar o topo visível ao clicar no menu */
+#recipes, #reservation, #about { scroll-margin-top: 80px; }
+
+@media (max-width: 1100px){
+  .header{
     grid-template-columns: 1fr;
+    grid-template-areas:
+      "logo"
+      "nav"
+      "image"
+      "title"
+      "desc"
+      "footer";
+    text-align: center;
+  }
+  .header__image{ justify-self: center; }
+}
+
+/* ===== RECIPES (bloco recipes) ===== */
+.recipes{
+  padding: 80px 40px;                    /* padding por seção */
+  background-color: #0A2850;
+  background-image: url("../images/background_recipes.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: #fff;
+  text-align: center;
+  border-radius: 12px;
+}
+.recipes__title{
+  margin: 0 0 8px 0;
+  font-size: 44px;                       /* 44/52 do roteiro */
+  line-height: 52px;
+}
+.recipes__subtitle{
+  margin: 0 0 16px 0;
+  font-size: 20px;                       /* 20/30 */
+  line-height: 30px;
+  opacity: .95;
+}
+.recipes__videos{
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin-top: 8px;
+  flex-wrap: wrap;
+}
+.recipes__video-item{ width: 320px; max-width: 100%; }
+.recipes__iframe{
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border: 0;
+  border-radius: 8px;
+}
+.recipes__video-caption{
+  margin: 8px 0 0 0;
+  font-size: 20px;                   
+  line-height: 30px;
+}
+
+
+.reservation{
+  padding: 80px 40px;                 
+  background: var(--accent);
+  text-align: center;
+  border-radius: 12px;
+}
+.reservation__title{
+  margin: 0 0 12px 0;
+  font-size: 28px;
+  line-height: 1.2;
+}
+.reservation__form{
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-width: 420px;
+  margin: 0 auto;
+  text-align: left;
+}
+.reservation__form label{ font-weight: 600; }
+.reservation__form input[type="text"],
+.reservation__form input[type="number"],
+.reservation__form input[type="datetime-local"],
+.reservation__form input[type="email"]{
+  padding: 10px 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  background: #fff;
+  font: inherit;
+}
+.reservation__form input:focus-visible{
+  border-color: var(--brand);
+  box-shadow: 0 0 0 3px rgba(42,96,217,.15);
+  outline: none;
+}
+.reservation button{
+  margin-top: 4px;
+  padding: 12px;
+  background: var(--brand);
+  color: #fff;
+  border: 0;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 700;
+}
+.reservation button:hover,
+.reservation button:focus-visible{ filter: brightness(.95); }
+.terms{
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  justify-content: center;
+  font-size: 14px;
+}
+
+
+.about{
+  padding: 80px 40px;                    
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 32px;
+  background: var(--panel);
+  color: var(--ink);
+  border-radius: 12px;
+}
+.about__title{
+  margin: 0 0 8px 0;
+  font-size: 28px;
+  line-height: 1.2;
+}
+.about__text{ max-width: 50%; }
+.highlight{ color: var(--brand); font-weight: 700; }
+.about__image img{
+  width: 320px;
+  max-width: 100%;
+  border-radius: 10px;
+}
+.about__hours{
+  margin-top: 10px;
+  font-size: 14px;
+  line-height: 20px;
+  color: var(--muted);
+}
+@media (max-width: 992px){
+  .about{
+    flex-direction: column;
+    text-align: center;
+  }
+  .about__text{ max-width: 680px; }
+}
+
+.footer{
+  background: var(--dark);
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 24px;
+  padding: 16px 24px;
+  width: 100%;
+  box-sizing: border-box;
+  border-radius: 12px;
+}
+.footer-left, .footer-right{ display: flex; flex-direction: column; }
+.footer-right{ text-align: right; }
+.footer ul{ list-style: none; padding: 0; margin: 0; }
+.footer a{ color: #fff; text-decoration: none; }
+.footer a:hover, .footer a:focus-visible{ text-decoration: underline; }
+.contact a{ color: #a3c0ff; }
+.contact a:hover, .contact a:focus-visible{ text-decoration: underline; }
+
+@media (max-width: 768px){
+  .nav__links{ flex-wrap: wrap; gap: 12px; }
+  .header{ padding: 24px 20px; }
+  .recipes__videos{ flex-direction: column; align-items: center; gap: 16px; }
+  .footer{
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 12px;
   }
 }
