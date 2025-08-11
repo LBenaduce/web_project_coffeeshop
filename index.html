@@ -3,21 +3,24 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <meta name="author" content="Luigi Benaduce">
   <meta name="description" content="Triple Espresso — Café especial na biblioteca Triple Peaks. Conheça nossas receitas, horários e faça sua reserva online.">
   <meta name="keywords" content="café, espresso, receitas, cafeteria, triple espresso, biblioteca, reserva de mesa">
-  <title>Triple Espresso</title>
 
-  <link rel="stylesheet" href="./vendor/normalize.css">
-  <link rel="stylesheet" href="./vendor/style.css">
-  <link rel="stylesheet" href="./pages/index.css">
+  <title>Triple Espresso</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Noto+Serif:ital,wght@1,400&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./vendor/normalize.css">
+  <link rel="stylesheet" href="./vendor/style.css">
+  <link rel="stylesheet" href="./pages/index.css">
 </head>
 <body>
   <div class="page">
+
     <header class="header">
       <div class="logo">Triple Espresso</div>
       <nav class="nav" aria-label="Navegação principal">
@@ -30,10 +33,10 @@
       </nav>
     </header>
 
-    <main>
+    <main class="content">
       <section class="hero" id="hero">
-        <div class="hero__text">
-          <h2 class="hero__title">Café especial na Biblioteca Triple Peaks</h2>
+        <div>
+          <h2>Café especial na Biblioteca Triple Peaks</h2>
           <p class="hero__description">Café como deve ser! Aproveite um café tradicional preferencialmente sem açúcar!</p>
         </div>
         <div class="hero__image">
@@ -42,8 +45,8 @@
       </section>
 
       <section class="recipes" id="recipes">
-        <h2 class="recipes__title">Receitas</h2>
-        <p class="recipes__subtitle">Confira algumas receitas que coletamos para seu café:</p>
+        <h2>Receitas</h2>
+        <p>Confira algumas receitas que coletamos para seu café:</p>
         <div class="recipes__videos">
           <div class="recipes__video">
             <iframe src="https://www.youtube.com/embed/dWIPmUtAFe0" title="Caffè Ristretto" allowfullscreen></iframe>
@@ -57,8 +60,8 @@
       </section>
 
       <section class="reservation" id="reservation">
-        <h2 class="reservation__title">Reservar uma mesa</h2>
-        <form class="reservation__form">
+        <h2>Reservar uma mesa</h2>
+        <form>
           <label for="nome">Nome *</label>
           <input type="text" id="nome" name="nome" required>
 
@@ -81,10 +84,11 @@
       </section>
 
       <section class="about" id="about">
+        <h2>Sobre o Triple Espresso</h2>
         <div class="about__text">
           <p><span class="highlight">Café especial</span><br>na biblioteca Triple Peaks</p>
           <p>Café como deve ser! Aproveite um café tradicional preferencialmente sem açúcar!</p>
-          <p class="hours">Horários:<br>Segunda a sexta (10:00 – 19:00)<br>Sábado e domingo (11:00 – 18:00)</p>
+          <p class="about__hours">Horários:<br>Segunda a sexta (10:00 – 19:00)<br>Sábado e domingo (11:00 – 18:00)</p>
         </div>
         <div class="about__image">
           <img src="images/caffe.jpg" alt="Ilustração de uma xícara de café">
@@ -93,7 +97,7 @@
     </main>
 
     <footer class="footer" id="contatos">
-      <div class="footer-left">
+      <div class="footer__left">
         <p>© 2025 Luigi Benaduce</p>
         <address class="contact">
           <p>Email: <a href="mailto:luigibenaduce@proton.me">luigibenaduce@proton.me</a></p>
@@ -101,7 +105,7 @@
           <p>Endereço: Rua dos Cafés, 123 - Triple Peaks</p>
         </address>
       </div>
-      <div class="footer-right" aria-label="Redes sociais">
+      <div class="footer__right" aria-label="Redes sociais">
         <p>Mídia social</p>
         <ul>
           <li><a href="#">Facebook</a></li>
@@ -109,6 +113,7 @@
         </ul>
       </div>
     </footer>
+
   </div>
 </body>
 </html>
