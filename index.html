@@ -17,10 +17,10 @@
 <body>
   <div class="page">
     <header class="header">
-      <div class="logo header__logo">Triple Espresso</div>
+      <div class="header__logo">Triple Espresso</div>
       <nav class="nav" aria-label="Navegação principal">
         <ul class="nav__links">
-          <li><a class="nav__link" href="#hero">Início</a></li>
+          <li><a class="nav__link" href="#header">Início</a></li>
           <li><a class="nav__link" href="#recipes">Receitas</a></li>
           <li><a class="nav__link" href="#reservation">Reservar uma mesa</a></li>
           <li><a class="nav__link" href="#about">Sobre</a></li>
@@ -29,34 +29,34 @@
     </header>
 
     <main class="content">
-      <section class="hero" id="hero">
-        <div class="hero__content">
-          <h2 class="hero__title"><span class="hero__accent">Café especial</span> na Biblioteca Triple Peaks</h2>
-          <p class="hero__description">Café como deve ser! Aproveite um café tradicional preferencialmente sem açúcar!</p>
+      <section class="header" id="header">
+        <div>
+          <h2>Café especial na Biblioteca Triple Peaks</h2>
+          <p class="lead">Café como deve ser! Aproveite um café tradicional preferencialmente sem açúcar!</p>
         </div>
-        <div class="hero__image">
+        <div class="hero-image">
           <img src="images/caffe.jpg" alt="Xícara de café sobre a mesa">
         </div>
       </section>
 
       <section class="recipes" id="recipes">
-        <h2 class="recipes__title">Receitas</h2>
-        <p class="recipes__subtitle">Confira algumas receitas que coletamos para seu café:</p>
-        <div class="recipes__videos">
-          <div class="recipes__video-item">
-            <iframe class="recipes__iframe" src="https://www.youtube.com/embed/dWIPmUtAFe0" title="Caffè Ristretto" allowfullscreen></iframe>
-            <p class="recipes__video-caption">Caffè Ristretto<br><small>~5 min</small></p>
+        <h2>Receitas</h2>
+        <p>Confira algumas receitas que coletamos para seu café:</p>
+        <div class="videos">
+          <div class="video">
+            <iframe src="https://www.youtube.com/embed/dWIPmUtAFe0" title="Caffè Ristretto" allowfullscreen></iframe>
+            <p>Caffè Ristretto<br><small>~5 min</small></p>
           </div>
-          <div class="recipes__video-item">
-            <iframe class="recipes__iframe" src="https://www.youtube.com/embed/SfG1erJg8cI" title="Receita Moka Bialetti" allowfullscreen></iframe>
-            <p class="recipes__video-caption">Receita Moka Bialetti<br><small>~15 min</small></p>
+          <div class="video">
+            <iframe src="https://www.youtube.com/embed/SfG1erJg8cI" title="Receita Moka Bialetti" allowfullscreen></iframe>
+            <p>Receita Moka Bialetti<br><small>~15 min</small></p>
           </div>
         </div>
       </section>
 
       <section class="reservation" id="reservation">
-        <h2 class="reservation__title">Reservar uma mesa</h2>
-        <form class="reservation__form">
+        <h2>Reservar uma mesa</h2>
+        <form>
           <label for="nome">Nome *</label>
           <input type="text" id="nome" name="nome" required>
           <label for="convidados">Número de convidados *</label>
@@ -74,13 +74,13 @@
       </section>
 
       <section class="about" id="about">
-        <h2 class="about__title">Sobre o Triple Espresso</h2>
-        <div class="about__text">
+        <h2>Sobre o Triple Espresso</h2>
+        <div class="about-text">
           <p><span class="highlight">Café especial</span><br>na biblioteca Triple Peaks</p>
           <p>Café como deve ser! Aproveite um café tradicional preferencialmente sem açúcar!</p>
-          <p class="about__hours">Horários:<br>Segunda a sexta (10:00 – 19:00)<br>Sábado e domingo (11:00 – 18:00)</p>
+          <p class="hours">Horários:<br>Segunda a sexta (10:00 – 19:00)<br>Sábado e domingo (11:00 – 18:00)</p>
         </div>
-        <div class="about__image">
+        <div class="about-image">
           <img src="images/caffe.jpg" alt="Ilustração de uma xícara de café">
         </div>
       </section>
@@ -103,7 +103,6 @@
         </ul>
       </nav>
     </footer>
-
   </div>
 </body>
 </html>
