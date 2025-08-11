@@ -3,6 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="author" content="Luigi Benaduce">
+  <meta name="description" content="Triple Espresso — Café especial na biblioteca Triple Peaks. Conheça nossas receitas, horários e faça sua reserva online.">
+  <meta name="keywords" content="café, espresso, receitas, cafeteria, triple espresso, biblioteca, reserva de mesa">
+
   <title>Triple Espresso</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,29 +19,35 @@
   <link rel="stylesheet" href="./pages/index.css">
 </head>
 <body>
+  <header class="header">
+    <h1>Triple Espresso</h1>
+    <nav>
+      <ul>
+        <li><a href="#hero">Início</a></li>
+        <li><a href="#recipes">Receitas</a></li>
+        <li><a href="#reservation">Reservar</a></li>
+        <li><a href="#about">Sobre</a></li>
+      </ul>
+    </nav>
+  </header>
+
   <main class="content">
-    <section class="hero">
+    <section class="hero" id="hero">
       <h2>Café especial na Biblioteca Triple Peaks</h2>
       <p>Café como deve ser! Aproveite um café tradicional preferencialmente sem açúcar!</p>
       <img src="images/caffe.jpg" alt="Xícara de café sobre a mesa">
     </section>
 
-    <section class="recipes">
+    <section class="recipes" id="recipes">
       <h2>Receitas</h2>
       <p>Confira algumas receitas que coletamos para seu café:</p>
-      <div class="videos">
-        <div class="video">
-          <iframe src="https://www.youtube.com/embed/dWIPmUtAFe0" title="Caffè Ristretto" allowfullscreen></iframe>
-          <p>Caffè Ristretto<br><small>~5 min</small></p>
-        </div>
-        <div class="video">
-          <iframe src="https://www.youtube.com/embed/SfG1erJg8cI" title="Receita Moka Bialetti" allowfullscreen></iframe>
-          <p>Receita Moka Bialetti<br><small>~15 min</small></p>
-        </div>
+      <div>
+        <iframe src="https://www.youtube.com/embed/dWIPmUtAFe0" title="Caffè Ristretto" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/SfG1erJg8cI" title="Receita Moka Bialetti" allowfullscreen></iframe>
       </div>
     </section>
 
-    <section class="reservation">
+    <section class="reservation" id="reservation">
       <h2>Reservar uma mesa</h2>
       <form>
         <label for="nome">Nome *</label>
@@ -51,22 +62,25 @@
         <label for="email">Seu e-mail *</label>
         <input type="email" id="email" name="email" required>
 
-        <button type="submit">Reservar uma mesa</button>
-
         <label>
           <input type="checkbox" id="terms" name="terms" required>
           Eu concordo com os termos de uso
         </label>
+
+        <button type="submit">Reservar</button>
       </form>
     </section>
 
-    <section class="about">
+    <section class="about" id="about">
       <h2>Sobre o Triple Espresso</h2>
-      <p><span class="highlight">Café especial</span><br>na biblioteca Triple Peaks</p>
-      <p>Café como deve ser! Aproveite um café tradicional preferencialmente sem açúcar!</p>
-      <p class="hours">Horários:<br>Segunda a sexta (10:00 – 19:00)<br>Sábado e domingo (11:00 – 18:00)</p>
+      <p><strong>Café especial</strong> na biblioteca Triple Peaks</p>
+      <p>Horários:<br>Segunda a sexta (10:00 – 19:00)<br>Sábado e domingo (11:00 – 18:00)</p>
       <img src="images/caffe.jpg" alt="Ilustração de uma xícara de café">
     </section>
   </main>
+
+  <footer class="footer">
+    <p>© 2025 Luigi Benaduce</p>
+  </footer>
 </body>
 </html>
