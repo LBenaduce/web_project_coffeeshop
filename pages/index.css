@@ -3,11 +3,17 @@
   flex-direction: column;
 }
 
-/* Hero */
 .hero {
   padding: 40px 24px;
   text-align: center;
 }
+
+.hero__title {
+  font-family: 'Noto Serif', serif;
+  font-style: italic;
+  font-weight: 400;
+}
+
 .hero__image {
   display: block;
   margin: 16px auto 0;
@@ -17,25 +23,25 @@
   border-radius: 8px;
 }
 
-/* Recipes */
 .recipes {
   background-color: #0A2850;
   color: #ffffff;
   padding: 40px 24px;
 }
+
 .recipes__videos {
   display: flex;
   gap: 16px;
   flex-wrap: wrap;
   margin-top: 16px;
 }
+
 .recipes__videos iframe {
   flex: 1 1 320px;
   height: 200px;
   border: none;
 }
 
-/* Reservation (conforme roteiro) */
 .reservation {
   background-color: #D9E7FF;
   background-image: url("../images/background_reservation.svg");
@@ -44,6 +50,7 @@
   background-size: cover;
   padding: 60px 24px;
 }
+
 .reservation__title {
   font-weight: 500;
   font-size: 44px;
@@ -51,10 +58,12 @@
   text-align: center;
   margin: 0 0 32px;
 }
+
 .reservation__form {
   margin: 0 auto;
   max-width: 385px;
 }
+
 .form__label {
   display: block;
   font-weight: 500;
@@ -62,6 +71,7 @@
   line-height: 20px;
   margin-top: 12px;
 }
+
 .form__input {
   box-sizing: border-box;
   width: 100%;
@@ -75,9 +85,11 @@
   color: #000000;
   background: #ffffff;
 }
+
 .form__input::placeholder {
   color: #838383;
 }
+
 .form__checkbox {
   display: flex;
   align-items: center;
@@ -87,11 +99,13 @@
   line-height: 20px;
   color: #000000;
 }
+
 .form__checkbox-input {
   width: 20px;
   height: 20px;
   border-radius: 2px;
 }
+
 .form__button {
   display: inline-block;
   width: 100%;
@@ -102,23 +116,29 @@
   font-size: 16px;
   line-height: 20px;
   color: #ffffff;
-  background-color: #2f80ed;
   border: none;
   border-radius: 4px;
   cursor: pointer;
 }
-.form__button:hover {
-  opacity: 0.7;
+
+.form__button--type-submit:enabled {
+  background: #E6252A;
+  font-weight: 600;
 }
 
-/* About */
+.form__button--type-submit:hover:enabled {
+  background: #B81D21;
+}
+
 .about {
   background-color: #f0f0f0;
   padding: 40px 24px;
 }
+
 .highlight {
   font-weight: bold;
 }
+
 .hours {
   margin-top: 12px;
   color: #6F6F6F;
