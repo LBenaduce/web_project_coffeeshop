@@ -5,8 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <meta name="author" content="Luigi Benaduce">
-  <meta name="description" content="Triple Espresso — Café especial na biblioteca Triple Peaks. Conheça nossas receitas, horários e faça sua reserva online.">
-  <meta name="keywords" content="café, espresso, receitas, cafeteria, triple espresso, biblioteca, reserva de mesa">
+  <meta name="description" content="Triple Espresso — Café especial na biblioteca Triple Peaks.">
+  <meta name="keywords" content="café, espresso, receitas, cafeteria, triple peaks">
 
   <title>Triple Espresso</title>
 
@@ -20,71 +20,23 @@
 </head>
 <body>
   <div class="page">
-
-    <header class="header">
-      <h1>Triple Espresso</h1>
-      <nav class="nav">
-        <ul class="nav__list">
-          <li class="nav__item"><a class="nav__link" href="#header">Início</a></li>
-          <li class="nav__item"><a class="nav__link" href="#recipes">Receitas</a></li>
-          <li class="nav__item"><a class="nav__link" href="#reservation">Reservar</a></li>
-          <li class="nav__item"><a class="nav__link" href="#about">Sobre</a></li>
-        </ul>
-      </nav>
-    </header>
-
     <main class="content">
-      <section class="header" id="header">
-        <h2>Café especial na Biblioteca Triple Peaks</h2>
-        <p>Café como deve ser! Aproveite um café tradicional preferencialmente sem açúcar!</p>
-        <img src="images/caffe.jpg" alt="Xícara de café sobre a mesa">
+      <section class="header">
+        <h2>Header</h2>
       </section>
 
-      <section class="recipes" id="recipes">
-        <h2>Receitas</h2>
-        <p>Confira algumas receitas que coletamos para seu café:</p>
-        <div>
-          <iframe src="https://www.youtube.com/embed/dWIPmUtAFe0" title="Caffè Ristretto" allowfullscreen></iframe>
-          <iframe src="https://www.youtube.com/embed/SfG1erJg8cI" title="Receita Moka Bialetti" allowfullscreen></iframe>
-        </div>
+      <section class="recipes">
+        <h2>Recipes</h2>
       </section>
 
-      <section class="reservation" id="reservation">
-        <h2>Reservar uma mesa</h2>
-        <form>
-          <label for="nome">Nome *</label>
-          <input id="nome" name="nome" type="text" required>
-
-          <label for="convidados">Número de convidados *</label>
-          <input id="convidados" name="convidados" type="number" min="1" max="8" required>
-
-          <label for="datahora">Data e hora *</label>
-          <input id="datahora" name="datahora" type="datetime-local" required>
-
-          <label for="email">Seu e-mail *</label>
-          <input id="email" name="email" type="email" required>
-
-          <label>
-            <input id="terms" name="terms" type="checkbox" required>
-            Eu concordo com os termos de uso
-          </label>
-
-          <button type="submit">Reservar</button>
-        </form>
+      <section class="reservation">
+        <h2>Reservation</h2>
       </section>
 
-      <section class="about" id="about">
-        <h2>Sobre o Triple Espresso</h2>
-        <p><strong>Café especial</strong> na biblioteca Triple Peaks</p>
-        <p>Horários:<br>Segunda a sexta (10:00 – 19:00)<br>Sábado e domingo (11:00 – 18:00)</p>
-        <img src="images/caffe.jpg" alt="Ilustração de uma xícara de café">
+      <section class="about">
+        <h2>About</h2>
       </section>
     </main>
-
-    <footer class="footer">
-      <p>&copy; 2025 Luigi Benaduce</p>
-    </footer>
-
   </div>
 </body>
 </html>
