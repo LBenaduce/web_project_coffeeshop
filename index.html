@@ -10,41 +10,84 @@
 
   <title>Triple Espresso</title>
 
+  <!-- Fonts: Inter 400/500/700 and Noto Serif italic 400 -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Noto+Serif:ital,wght@1,400&display=swap" rel="stylesheet">
 
+  <!-- Styles -->
   <link rel="stylesheet" href="./vendor/normalize.css">
   <link rel="stylesheet" href="./vendor/style.css">
   <link rel="stylesheet" href="./pages/index.css">
 </head>
 <body>
   <div class="page">
+
     <header class="header">
       <h1>Triple Espresso</h1>
+      <nav>
+        <ul>
+          <li><a href="#header">Home</a></li>
+          <li><a href="#recipes">Recipes</a></li>
+          <li><a href="#reservation">Reservation</a></li>
+          <li><a href="#about">About</a></li>
+        </ul>
+      </nav>
     </header>
 
     <main class="content">
-      <section class="header">
-        <h2>Hero Section</h2>
+      <section class="header" id="header">
+        <h2>Special coffee at Triple Peaks Library</h2>
+        <p>Real coffee as it should be — preferably without sugar!</p>
+        <img src="images/caffe.jpg" alt="Coffee cup on a table">
       </section>
 
-      <section class="recipes">
+      <section class="recipes" id="recipes">
         <h2>Recipes</h2>
+        <p>Check out a few recipes we collected for your coffee:</p>
+        <iframe src="https://www.youtube.com/embed/dWIPmUtAFe0" title="Caffè Ristretto" allowfullscreen></iframe>
+        <p>Caffè Ristretto <br><small>~5 min</small></p>
+        <iframe src="https://www.youtube.com/embed/SfG1erJg8cI" title="Moka Bialetti Recipe" allowfullscreen></iframe>
+        <p>Moka Bialetti Recipe <br><small>~15 min</small></p>
       </section>
 
-      <section class="reservation">
-        <h2>Reservation</h2>
+      <section class="reservation" id="reservation">
+        <h2>Book a table</h2>
+        <form>
+          <label for="name">Name *</label>
+          <input id="name" name="name" type="text" required>
+
+          <label for="guests">Number of guests *</label>
+          <input id="guests" name="guests" type="number" min="1" max="8" required>
+
+          <label for="datetime">Date & time *</label>
+          <input id="datetime" name="datetime" type="datetime-local" required>
+
+          <label for="email">Your email *</label>
+          <input id="email" name="email" type="email" required>
+
+          <label>
+            <input id="terms" name="terms" type="checkbox" required>
+            I agree to the terms of use
+          </label>
+
+          <button type="submit">Reserve</button>
+        </form>
       </section>
 
-      <section class="about">
-        <h2>About</h2>
+      <section class="about" id="about">
+        <h2>About Triple Espresso</h2>
+        <p><span class="highlight">Special coffee</span><br>at the Triple Peaks Library</p>
+        <p>Enjoy a traditional coffee — preferably without sugar!</p>
+        <p class="hours">Hours:<br>Mon–Fri (10:00 – 19:00)<br>Sat–Sun (11:00 – 18:00)</p>
+        <img src="images/caffe.jpg" alt="Illustration of a coffee cup">
       </section>
     </main>
 
     <footer class="footer">
       <p>&copy; 2025 Luigi Benaduce</p>
     </footer>
+
   </div>
 </body>
 </html>
