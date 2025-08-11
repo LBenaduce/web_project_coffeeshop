@@ -1,119 +1,69 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta
-      name="description"
-      content="Página web com receitas de lanches, rápidas e práticas"
-    />
-    <meta name="author" content="Maiza Volpato dos Santos" />
-    <meta name="keywords" content="café, tripleten, vídeo, receitas" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Página web com receitas de lanches, rápidas e práticas">
+    <meta name="author" content="Maiza Volpato dos Santos">
+    <meta name="keywords" content="café, tripleten, vídeo, receitas">
     <title>Café</title>
 
-    <link rel="shortcut icon" href="./favicon.ico" />
+    <link rel="shortcut icon" href="./favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
-
-    <link rel="stylesheet" href="./pages/index.css" />
+    <link rel="stylesheet" href="vendor/normalize.css">
+    <link rel="stylesheet" href="pages/index.css">
+    <link rel="stylesheet" href="vendor/style.css">
   </head>
   <body>
     <div class="page">
       <header class="header">
         <nav class="nav" aria-label="Navegação principal">
-          <img
-            class="nav__logo"
-            src="./images/logo_coffeeshop_dark.svg"
-            alt="Logo Triple Espresso"
-            width="142"
-            height="32"
-          />
+          <img class="nav__logo" src="./images/logo_coffeeshop_dark.svg" alt="Logo Triple Espresso" width="142" height="32">
           <ul class="nav__links">
-            <li class="nav__item">
-              <a href="#recipes" class="nav__link">Receitas</a>
-            </li>
-            <li class="nav__item">
-              <a href="#reservation" class="nav__link">Reservar uma mesa</a>
-            </li>
-            <li class="nav__item">
-              <a href="#contacts" class="nav__link">Contatos</a>
-            </li>
+            <li class="nav__item"><a href="#recipes" class="nav__link">Receitas</a></li>
+            <li class="nav__item"><a href="#reservation" class="nav__link">Reservar uma mesa</a></li>
+            <li class="nav__item"><a href="#contacts" class="nav__link">Contatos</a></li>
           </ul>
         </nav>
 
         <h1 class="header__title">
-          <span class="header__span-accent">Café especial</span>
-          na biblioteca Triple Peaks
+          <span class="header__span-accent">Café especial</span> na biblioteca Triple Peaks
         </h1>
 
         <p class="header__description">
-          <span class="header__description-break">
-            Esta é nossa zona de estudo! Temos aquele cafezinho para
-            energizar
-          </span>
+          <span class="header__description-break">Esta é nossa zona de estudo! Temos aquele cafezinho para energizar</span>
           você e vibrações aconchegantes para soltar a criatividade.
         </p>
 
-        <img
-          class="header__image"
-          src="./images/inside_coffee_shop.png"
-          alt="Interior da cafeteria Tripleten Coffee Shop"
-          loading="eager"
-          width="1200"
-          height="600"
-        />
+        <img class="header__image" src="./images/inside_coffee_shop.png" alt="Interior da cafeteria Tripleten Coffee Shop" loading="eager" width="1200" height="600">
 
         <div class="header__footer">
           <p class="header__paragraph"><span>Horários:</span></p>
-          <p class="header__paragraph">
-            <span>Segunda a sexta (10:00 - 19:00)</span>
-          </p>
-          <p class="header__paragraph">
-            <span>Sábado a domingo (11:00 - 18:00)</span>
-          </p>
-          <p class="header__paragraph">
-            200 Success Avenue, cidade de Triple Peaks
-          </p>
+          <p class="header__paragraph"><span>Segunda a sexta (10:00 - 19:00)</span></p>
+          <p class="header__paragraph"><span>Sábado a domingo (11:00 - 18:00)</span></p>
+          <p class="header__paragraph">200 Success Avenue, cidade de Triple Peaks</p>
         </div>
       </header>
 
       <main class="content">
         <section id="recipes" class="recipes" aria-labelledby="recipes-title">
           <h2 id="recipes-title" class="recipes__title">Receitas</h2>
-          <p class="recipes__subtitle">
-            Confira algumas receitas que coletamos para seu lanchinho caseiro:
-          </p>
+          <p class="recipes__subtitle">Confira algumas receitas que coletamos para seu lanchinho caseiro:</p>
 
           <div class="recipes__videos">
             <article class="recipes__video-item">
-              <iframe
-                class="recipes__iframe"
-                src="https://www.youtube.com/embed/iWmmbMX4Qk4?si=aT8pB7a4wNNiuGSk"
-                title="Receita: Tofu Mexido"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerpolicy="strict-origin-when-cross-origin"
-                allowfullscreen
-              ></iframe>
+              <h3 class="visually-hidden">Receita Tofu Mexido</h3>
+              <iframe class="recipes__iframe" src="https://www.youtube.com/embed/iWmmbMX4Qk4?si=aT8pB7a4wNNiuGSk" title="Receita: Tofu Mexido" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
               <p class="recipes__video-caption">Receita Tofu Mexido ~15 min</p>
             </article>
 
             <article class="recipes__video-item">
-              <iframe
-                class="recipes__iframe"
-                src="https://www.youtube.com/embed/NsdNtDTUcWc?si=CX5yfIRZBrXT1alJ"
-                title="Receita: Chocolate Quente Vegano"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerpolicy="strict-origin-when-cross-origin"
-                allowfullscreen
-              ></iframe>
-              <p class="recipes__video-caption">
-                Receita de Chocolate Quente Vegano ~4 min
-              </p>
+              <h3 class="visually-hidden">Receita de Chocolate Quente Vegano</h3>
+              <iframe class="recipes__iframe" src="https://www.youtube.com/embed/NsdNtDTUcWc?si=CX5yfIRZBrXT1alJ" title="Receita: Chocolate Quente Vegano" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              <p class="recipes__video-caption">Receita de Chocolate Quente Vegano ~4 min</p>
             </article>
           </div>
         </section>
@@ -127,65 +77,23 @@
                 <legend class="form__legend">Dados da reserva</legend>
 
                 <label for="name" class="form__label">Nome *</label>
-                <input
-                  type="text"
-                  class="form__input"
-                  id="name"
-                  name="name"
-                  placeholder="Nome"
-                  minlength="2"
-                  required
-                />
+                <input type="text" class="form__input" id="name" name="name" placeholder="Nome" minlength="2" required>
 
                 <label for="numero" class="form__label">Número de convidados *</label>
-                <input
-                  type="number"
-                  class="form__input"
-                  id="numero"
-                  name="guests"
-                  placeholder="1-8"
-                  min="1"
-                  max="8"
-                  required
-                />
+                <input type="number" class="form__input" id="numero" name="guests" placeholder="1-8" min="1" max="8" required>
 
                 <label for="data" class="form__label">Data e hora *</label>
-                <input
-                  type="datetime-local"
-                  class="form__input"
-                  id="data"
-                  name="datetime"
-                  required
-                />
+                <input type="datetime-local" class="form__input" id="data" name="datetime" required>
 
                 <label for="email" class="form__label">Seu e-mail *</label>
-                <input
-                  type="email"
-                  class="form__input"
-                  id="email"
-                  name="email"
-                  placeholder="email@email.com"
-                  inputmode="email"
-                  autocomplete="email"
-                  required
-                />
+                <input type="email" class="form__input" id="email" name="email" placeholder="email@email.com" inputmode="email" autocomplete="email" required>
 
                 <div class="form__controls">
-                  <input
-                    type="checkbox"
-                    class="form__checkbox-input"
-                    id="termos"
-                    name="terms"
-                    required
-                  />
-                  <label for="termos" class="form__checkbox-label">
-                    Eu concordo com os termos de uso *
-                  </label>
+                  <input type="checkbox" class="form__checkbox-input" id="termos" name="terms" required>
+                  <label for="termos" class="form__checkbox-label">Eu concordo com os termos de uso *</label>
                 </div>
 
-                <button class="form__button form__button_type_submit" type="submit">
-                  Reservar uma mesa
-                </button>
+                <button class="form__button form__button_type_submit" type="submit">Reservar uma mesa</button>
               </fieldset>
             </form>
           </div>
@@ -198,41 +106,20 @@
         <section id="contacts" class="footer__content" aria-labelledby="footer-about">
           <h2 id="footer-about" class="visually-hidden">Sobre e contatos</h2>
 
-          <img
-            class="footer__logo"
-            src="./images/logo_coffeeshop_light.svg"
-            alt="Logo Triple Espresso"
-            width="142"
-            height="32"
-            loading="lazy"
-          />
+          <img class="footer__logo" src="./images/logo_coffeeshop_light.svg" alt="Logo Triple Espresso" width="142" height="32" loading="lazy">
 
           <div class="footer__social">
             <h3 class="footer__social-heading">Mídia social</h3>
             <ul class="footer__list">
               <li class="footer__list-item">
                 <a class="footer__social-link" href="https://facebook.com" target="_blank" rel="noopener">
-                  <img
-                    class="footer__social-icon"
-                    src="./images/facebook_white.svg"
-                    alt=""
-                    width="20"
-                    height="20"
-                    loading="lazy"
-                  />
+                  <img class="footer__social-icon" src="./images/facebook_white.svg" alt="" width="20" height="20" loading="lazy">
                   Facebook
                 </a>
               </li>
               <li class="footer__list-item">
                 <a class="footer__social-link" href="https://instagram.com" target="_blank" rel="noopener">
-                  <img
-                    class="footer__social-icon"
-                    src="./images/instagram_white.svg"
-                    alt=""
-                    width="20"
-                    height="20"
-                    loading="lazy"
-                  />
+                  <img class="footer__social-icon" src="./images/instagram_white.svg" alt="" width="20" height="20" loading="lazy">
                   Instagram
                 </a>
               </li>
