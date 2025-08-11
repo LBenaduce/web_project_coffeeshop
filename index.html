@@ -3,11 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
   <meta name="author" content="Luigi Benaduce">
   <meta name="description" content="Triple Espresso — Café especial na biblioteca Triple Peaks. Conheça nossas receitas, horários e faça sua reserva online.">
   <meta name="keywords" content="café, espresso, receitas, cafeteria, triple espresso, biblioteca, reserva de mesa">
-
   <title>Triple Espresso</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,10 +18,9 @@
 </head>
 <body>
   <div class="page">
-
     <header class="header">
       <div class="logo">Triple Espresso</div>
-      <nav class="nav" aria-label="Navegação principal">
+      <nav class="nav">
         <ul class="nav__links">
           <li class="nav__item"><a class="nav__link" href="#hero">Início</a></li>
           <li class="nav__item"><a class="nav__link" href="#recipes">Receitas</a></li>
@@ -35,27 +32,21 @@
 
     <main class="content">
       <section class="hero" id="hero">
-        <div>
-          <h2>Café especial na Biblioteca Triple Peaks</h2>
-          <p class="hero__description">Café como deve ser! Aproveite um café tradicional preferencialmente sem açúcar!</p>
-        </div>
-        <div class="hero__image">
-          <img src="images/caffe.jpg" alt="Xícara de café sobre a mesa">
-        </div>
+        <h2>Café especial na Biblioteca Triple Peaks</h2>
+        <p>Café como deve ser! Aproveite um café tradicional preferencialmente sem açúcar!</p>
+        <img src="images/caffe.jpg" alt="Xícara de café sobre a mesa">
       </section>
 
       <section class="recipes" id="recipes">
         <h2>Receitas</h2>
-        <p>Confira algumas receitas que coletamos para seu café:</p>
-        <div class="recipes__videos">
-          <div class="recipes__video">
-            <iframe src="https://www.youtube.com/embed/dWIPmUtAFe0" title="Caffè Ristretto" allowfullscreen></iframe>
-            <p>Caffè Ristretto<br><small>~5 min</small></p>
-          </div>
-          <div class="recipes__video">
-            <iframe src="https://www.youtube.com/embed/SfG1erJg8cI" title="Receita Moka Bialetti" allowfullscreen></iframe>
-            <p>Receita Moka Bialetti<br><small>~15 min</small></p>
-          </div>
+        <p>Confira algumas receitas para seu café:</p>
+        <div>
+          <iframe src="https://www.youtube.com/embed/dWIPmUtAFe0" title="Caffè Ristretto" allowfullscreen></iframe>
+          <p>Caffè Ristretto<br><small>~5 min</small></p>
+        </div>
+        <div>
+          <iframe src="https://www.youtube.com/embed/SfG1erJg8cI" title="Receita Moka Bialetti" allowfullscreen></iframe>
+          <p>Receita Moka Bialetti<br><small>~15 min</small></p>
         </div>
       </section>
 
@@ -63,41 +54,37 @@
         <h2>Reservar uma mesa</h2>
         <form>
           <label for="nome">Nome *</label>
-          <input type="text" id="nome" name="nome" required>
+          <input id="nome" name="nome" type="text" required>
 
           <label for="convidados">Número de convidados *</label>
-          <input type="number" id="convidados" name="convidados" min="1" max="8" required>
+          <input id="convidados" name="convidados" type="number" min="1" max="8" required>
 
           <label for="datahora">Data e hora *</label>
-          <input type="datetime-local" id="datahora" name="datahora" required>
+          <input id="datahora" name="datahora" type="datetime-local" required>
 
           <label for="email">Seu e-mail *</label>
-          <input type="email" id="email" name="email" required>
+          <input id="email" name="email" type="email" required>
 
-          <button type="submit">Reservar uma mesa</button>
-
-          <label class="terms" for="terms">
-            <input type="checkbox" id="terms" name="terms" required>
+          <label class="terms">
+            <input id="terms" name="terms" type="checkbox" required>
             Eu concordo com os termos de uso
           </label>
+
+          <button type="submit">Reservar uma mesa</button>
         </form>
       </section>
 
       <section class="about" id="about">
         <h2>Sobre o Triple Espresso</h2>
-        <div class="about__text">
-          <p><span class="highlight">Café especial</span><br>na biblioteca Triple Peaks</p>
-          <p>Café como deve ser! Aproveite um café tradicional preferencialmente sem açúcar!</p>
-          <p class="about__hours">Horários:<br>Segunda a sexta (10:00 – 19:00)<br>Sábado e domingo (11:00 – 18:00)</p>
-        </div>
-        <div class="about__image">
-          <img src="images/caffe.jpg" alt="Ilustração de uma xícara de café">
-        </div>
+        <p><span class="highlight">Café especial</span><br>na biblioteca Triple Peaks</p>
+        <p>Café como deve ser! Aproveite um café tradicional preferencialmente sem açúcar!</p>
+        <p class="hours">Horários:<br>Segunda a sexta (10:00 – 19:00)<br>Sábado e domingo (11:00 – 18:00)</p>
+        <img src="images/caffe.jpg" alt="Ilustração de uma xícara de café">
       </section>
     </main>
 
     <footer class="footer" id="contatos">
-      <div class="footer__left">
+      <div>
         <p>© 2025 Luigi Benaduce</p>
         <address class="contact">
           <p>Email: <a href="mailto:luigibenaduce@proton.me">luigibenaduce@proton.me</a></p>
@@ -105,15 +92,13 @@
           <p>Endereço: Rua dos Cafés, 123 - Triple Peaks</p>
         </address>
       </div>
-      <div class="footer__right" aria-label="Redes sociais">
-        <p>Mídia social</p>
+      <nav>
         <ul>
           <li><a href="#">Facebook</a></li>
           <li><a href="#">Instagram</a></li>
         </ul>
-      </div>
+      </nav>
     </footer>
-
   </div>
 </body>
 </html>
