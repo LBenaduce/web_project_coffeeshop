@@ -1,4 +1,3 @@
-/* Reset básico */
 *,
 *::before,
 *::after {
@@ -23,7 +22,6 @@ img {
   display: block;
 }
 
-/* Classe utilitária */
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -41,7 +39,6 @@ img {
   margin-left: auto;
   margin-right: auto;
 }
-
 
 .header {
   padding: 1rem;
@@ -64,8 +61,6 @@ img {
   display: flex;
   gap: 1rem;
 }
-
-.nav__item {}
 
 .nav__link {
   text-decoration: none;
@@ -106,7 +101,6 @@ img {
   font-weight: 600;
 }
 
-/* Recipes */
 .recipes {
   padding: 2rem 1rem;
 }
@@ -143,16 +137,21 @@ img {
   font-size: 0.9rem;
 }
 
-/* Reservation */
 .reservation {
   padding: 2rem 1rem;
   background: #f9f9f9;
 }
 
 .reservation__title {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 44px;
+  line-height: 52px;
   text-align: center;
-  font-size: 1.75rem;
-  margin-bottom: 1.5rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 80px;
 }
 
 .form {
@@ -177,6 +176,7 @@ img {
 }
 
 .form__input {
+  width: 100%;
   padding: 0.5rem;
   border: 1px solid #ccc;
   border-radius: 4px;
@@ -206,17 +206,16 @@ img {
   cursor: pointer;
 }
 
-.form__button--submit {
+.form__button_type_submit {
   background: #e6252a;
   color: #fff;
   font-weight: 600;
 }
 
-.form__button--submit:hover:enabled {
+.form__button_type_submit:hover:enabled {
   background: #b81d21;
 }
 
-/* Footer */
 .footer {
   background: #222;
   color: #fff;
@@ -253,8 +252,6 @@ img {
   display: flex;
   gap: 1rem;
 }
-
-.footer__list-item {}
 
 .footer__social-link {
   display: flex;
