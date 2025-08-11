@@ -1,53 +1,276 @@
-body {
-  font-family: 'Inter', Arial, sans-serif;
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+:root {
+  --color-primary: #e6252a;
+  --color-primary-dark: #b81d21;
+  --color-bg-light: #f9f9f9;
+  --color-bg-dark: #222;
+  --color-text: #222;
+  --color-text-light: #fff;
+  --font-main: "Inter", sans-serif;
+  --font-accent: "Noto Serif", serif;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: var(--font-main);
+  line-height: 1.5;
   background-color: #fff;
-  color: #000;
+  color: var(--color-text);
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .page {
-  max-width: 1280px;
-  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 .header {
+  padding: 1rem;
+  text-align: center;
+  background: var(--color-bg-light);
+}
+
+.nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 16px 24px;
-  background-color: #ffffff;
 }
 
-.logo {
-  font-weight: 700;
-  font-size: 20px;
+.nav__logo {
+  height: 40px;
 }
 
-.nav__list {
+.nav__links {
   list-style: none;
   display: flex;
-  margin: 0;
-  padding: 0;
-}
-
-.nav__item + .nav__item {
-  margin-left: 16px;
+  gap: 1rem;
 }
 
 .nav__link {
-  text-decoration: none;
-  color: inherit;
+  font-weight: 500;
+}
+
+.header__title {
+  font-family: var(--font-accent);
+  font-size: 2rem;
+  margin-top: 1rem;
+}
+
+.header__span-accent {
+  color: var(--color-primary-dark);
+}
+
+.header__description {
+  margin: 1rem auto;
+  max-width: 600px;
+}
+
+.header__description-break {
+  display: block;
+}
+
+.header__image {
+  margin: 1.5rem auto;
+  border-radius: 8px;
+}
+
+.header__footer {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+}
+
+.header__paragraph span {
+  font-weight: 600;
+}
+
+.recipes {
+  padding: 2rem 1rem;
+}
+
+.recipes__title {
+  text-align: center;
+  font-size: 1.75rem;
+  margin-bottom: 0.5rem;
+}
+
+.recipes__subtitle {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.recipes__videos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.recipes__video-item {
+  text-align: center;
+}
+
+.recipes__iframe {
+  width: 100%;
+  height: 200px;
+  border: none;
+}
+
+.recipes__video-caption {
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.reservation {
+  padding: 2rem 1rem;
+  background: var(--color-bg-light);
+}
+
+.reservation__title {
+  text-align: center;
+  font-size: 1.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.form {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.form__fieldset {
+  border: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.form__legend {
+  font-weight: 600;
+}
+
+.form__label {
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+.form__input {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font: inherit;
+}
+
+.form__controls {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.form__checkbox-input {
+  width: 18px;
+  height: 18px;
+}
+
+.form__checkbox-label {
+  font-size: 0.9rem;
+}
+
+.form__button {
+  padding: 0.75rem;
+  border: none;
+  border-radius: 4px;
+  font: inherit;
+  cursor: pointer;
+}
+
+.form__button--submit {
+  background: var(--color-primary);
+  color: var(--color-text-light);
+  font-weight: 600;
+}
+
+.form__button--submit:hover:enabled {
+  background: var(--color-primary-dark);
 }
 
 .footer {
-  background-color: #ffffff;
-  padding: 16px 24px;
-  text-align: center;
-  font-size: 14px;
+  background: var(--color-bg-dark);
+  color: var(--color-text-light);
+  padding: 2rem 1rem;
+  margin-top: auto;
 }
 
-.footer a {
-  color: inherit;
-  text-decoration: none;
+.footer__circle {
+  width: 50px;
+  height: 50px;
+  background: var(--color-primary-dark);
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+
+.footer__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.footer__logo {
+  height: 40px;
+}
+
+.footer__social-heading {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.footer__list {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+.footer__social-link {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.footer__social-icon {
+  height: 20px;
+}
+
+.footer__copyright {
+  text-align: center;
+  font-size: 0.85rem;
+  margin-top: 1.5rem;
 }

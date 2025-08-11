@@ -1,80 +1,251 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="author" content="Luigi Benaduce" />
-  <meta name="description" content="Triple Espresso — Café especial na biblioteca Triple Peaks. Conheça nossas receitas, horários e faça sua reserva online." />
-  <meta name="keywords" content="café, espresso, receitas, cafeteria, triple espresso, biblioteca, reserva de mesa" />
-  <title>Triple Espresso</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Noto+Serif:ital,wght@1,400&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="./vendor/normalize.css" />
-  <link rel="stylesheet" href="./vendor/style.css" />
-  <link rel="stylesheet" href="./pages/index.css" />
-</head>
-<body>
-  <div class="page">
-    <header class="header">
-      <div class="logo">Triple Espresso</div>
-      <nav class="nav" aria-label="Menu principal">
-        <ul class="nav__list">
-          <li class="nav__item"><a class="nav__link" href="#hero">Início</a></li>
-          <li class="nav__item"><a class="nav__link" href="#recipes">Receitas</a></li>
-          <li class="nav__item"><a class="nav__link" href="#reservation">Reservar</a></li>
-          <li class="nav__item"><a class="nav__link" href="#about">Sobre</a></li>
-        </ul>
-      </nav>
-    </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Página web com receitas de lanches, rápidas e práticas"
+    />
+    <meta name="author" content="luigi Benaduce" />
+    <meta name="keywords" content="café, tripleten, vídeo, receitas" />
+    <title>Café</title>
 
-    <main class="content">
-      <section class="hero" id="hero">
-        <h2 class="hero__title">Café especial na Biblioteca Triple Peaks</h2>
-        <p>Café como deve ser! Aproveite um café tradicional preferencialmente sem açúcar!</p>
-        <img class="hero__image" src="images/caffe.jpg" alt="Xícara de café sobre a mesa" loading="lazy" />
-      </section>
+    <link rel="shortcut icon" href="./favicon.ico" />
 
-      <section class="recipes" id="recipes">
-        <h2>Receitas</h2>
-        <p>Confira algumas receitas que coletamos para seu café:</p>
-        <div class="recipes__videos">
-          <iframe src="https://www.youtube.com/embed/dWIPmUtAFe0" title="Caffè Ristretto" allowfullscreen></iframe>
-          <iframe src="https://www.youtube.com/embed/SfG1erJg8cI" title="Receita Moka Bialetti" allowfullscreen></iframe>
+    <!-- Fonts: Inter + Noto Serif (inclui itálico 400) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS (ajuste a ordem conforme seus arquivos) -->
+    <!-- <link rel="stylesheet" href="./vendor/normalize.css" /> -->
+    <!-- <link rel="stylesheet" href="./vendor/style.css" /> -->
+    <link rel="stylesheet" href="./pages/index.css" />
+  </head>
+  <body>
+    <div class="page">
+      <header class="header">
+        <nav class="nav" aria-label="Navegação principal">
+          <img
+            class="nav__logo"
+            src="./images/logo_coffeeshop_dark.svg"
+            alt="Logo Triple Espresso"
+            width="142"
+            height="32"
+          />
+          <ul class="nav__links">
+            <li class="nav__item">
+              <a href="#recipes" class="nav__link">Receitas</a>
+            </li>
+            <li class="nav__item">
+              <a href="#reservation" class="nav__link">Reservar uma mesa</a>
+            </li>
+            <li class="nav__item">
+              <a href="#contacts" class="nav__link">Contatos</a>
+            </li>
+          </ul>
+        </nav>
+
+        <h1 class="header__title">
+          <span class="header__span-accent">Café especial</span>
+          na biblioteca Triple Peaks
+        </h1>
+
+        <p class="header__description">
+          <span class="header__description-break">
+            Esta é nossa zona de estudo! Temos aquele cafezinho para
+            energizar
+          </span>
+          você e vibrações aconchegantes para soltar a criatividade.
+        </p>
+
+        <img
+          class="header__image"
+          src="./images/inside_coffee_shop.png"
+          alt="Interior da cafeteria Tripleten Coffee Shop"
+          loading="eager"
+          width="1200"
+          height="600"
+        />
+
+        <div class="header__footer">
+          <p class="header__paragraph"><span>Horários:</span></p>
+          <p class="header__paragraph">
+            <span>Segunda a sexta (10:00 - 19:00)</span>
+          </p>
+          <p class="header__paragraph">
+            <span>Sábado a domingo (11:00 - 18:00)</span>
+          </p>
+          <p class="header__paragraph">
+            200 Success Avenue, cidade de Triple Peaks
+          </p>
         </div>
-      </section>
+      </header>
 
-      <section class="reservation" id="reservation">
-        <h2 class="reservation__title">Reservar uma mesa</h2>
-        <form class="reservation__form form">
-          <label class="form__label" for="nome">Nome *</label>
-          <input class="form__input" type="text" id="nome" name="nome" placeholder="Nome" required />
-          <label class="form__label" for="convidados">Número de convidados *</label>
-          <input class="form__input" type="number" id="convidados" name="convidados" min="1" max="8" placeholder="1-8" required />
-          <label class="form__label" for="datahora">Data e hora *</label>
-          <input class="form__input" type="datetime-local" id="datahora" name="datahora" required />
-          <label class="form__label" for="email">Seu e-mail *</label>
-          <input class="form__input" type="email" id="email" name="email" placeholder="email@email.com" required />
-          <label class="form__checkbox">
-            <input class="form__checkbox-input" type="checkbox" name="terms" required />
-            Eu concordo com os termos de uso
-          </label>
-          <button class="form__button form__button--type-submit" type="submit">Reservar</button>
-        </form>
-      </section>
+      <main class="content">
+        <section id="recipes" class="recipes" aria-labelledby="recipes-title">
+          <h2 id="recipes-title" class="recipes__title">Receitas</h2>
+          <p class="recipes__subtitle">
+            Confira algumas receitas que coletamos para seu lanchinho caseiro:
+          </p>
 
-      <section class="about" id="about">
-        <h2>Sobre o Triple Espresso</h2>
-        <p><span class="highlight">Café especial</span> na biblioteca Triple Peaks</p>
-        <p>Café como deve ser! Aproveite um café tradicional preferencialmente sem açúcar!</p>
-        <p class="hours">Horários:<br>Seg-Sex (10:00 – 19:00)<br>Sáb-Dom (11:00 – 18:00)</p>
-      </section>
-    </main>
+          <div class="recipes__videos">
+            <article class="recipes__video-item">
+              <iframe
+                class="recipes__iframe"
+                src="https://www.youtube.com/embed/iWmmbMX4Qk4?si=aT8pB7a4wNNiuGSk"
+                title="Receita: Tofu Mexido"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
+              <p class="recipes__video-caption">Receita Tofu Mexido ~15 min</p>
+            </article>
 
-    <footer class="footer">
-      <p>© 2025 Luigi Benaduce</p>
-      <address>Email: <a href="mailto:luigibenaduce@proton.me">luigibenaduce@proton.me</a></address>
-    </footer>
-  </div>
-</body>
+            <article class="recipes__video-item">
+              <iframe
+                class="recipes__iframe"
+                src="https://www.youtube.com/embed/NsdNtDTUcWc?si=CX5yfIRZBrXT1alJ"
+                title="Receita: Chocolate Quente Vegano"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
+              <p class="recipes__video-caption">
+                Receita de Chocolate Quente Vegano ~4 min
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <section id="reservation" class="reservation" aria-labelledby="reservation-title">
+          <div class="reservation__content">
+            <h2 id="reservation-title" class="reservation__title">Reservar uma mesa</h2>
+
+            <form class="reservation__form form" action="#" method="post" novalidate>
+              <fieldset class="form__fieldset">
+                <legend class="form__legend">Dados da reserva</legend>
+
+                <label for="name" class="form__label">Nome *</label>
+                <input
+                  type="text"
+                  class="form__input"
+                  id="name"
+                  name="name"
+                  placeholder="Nome"
+                  minlength="2"
+                  required
+                />
+
+                <label for="numero" class="form__label">Número de convidados *</label>
+                <input
+                  type="number"
+                  class="form__input"
+                  id="numero"
+                  name="guests"
+                  placeholder="1-8"
+                  min="1"
+                  max="8"
+                  required
+                />
+
+                <label for="data" class="form__label">Data e hora *</label>
+                <input
+                  type="datetime-local"
+                  class="form__input"
+                  id="data"
+                  name="datetime"
+                  required
+                />
+
+                <label for="email" class="form__label">Seu e-mail *</label>
+                <input
+                  type="email"
+                  class="form__input"
+                  id="email"
+                  name="email"
+                  placeholder="email@email.com"
+                  inputmode="email"
+                  autocomplete="email"
+                  required
+                />
+
+                <div class="form__controls">
+                  <input
+                    type="checkbox"
+                    class="form__checkbox-input"
+                    id="termos"
+                    name="terms"
+                    required
+                  />
+                  <label for="termos" class="form__checkbox-label">
+                    Eu concordo com os termos de uso *
+                  </label>
+                </div>
+
+                <button class="form__button form__button--submit" type="submit">
+                  Reservar uma mesa
+                </button>
+              </fieldset>
+            </form>
+          </div>
+        </section>
+      </main>
+
+      <footer id="contacts" class="footer">
+        <div class="footer__circle" aria-hidden="true"></div>
+
+        <section class="footer__content" aria-labelledby="footer-about">
+          <h2 id="footer-about" class="visually-hidden">Sobre e contatos</h2>
+
+          <img
+            class="footer__logo"
+            src="./images/logo_coffeeshop_light.svg"
+            alt="Logo Triple Espresso"
+            width="142"
+            height="32"
+            loading="lazy"
+          />
+
+          <div class="footer__social">
+            <h3 class="footer__social-heading">Mídia social</h3>
+            <ul class="footer__list">
+              <li class="footer__list-item">
+                <a class="footer__social-link" href="https://facebook.com" target="_blank" rel="noopener">
+                  <img
+                    class="footer__social-icon"
+                    src="./images/facebook_white.svg"
+                    alt=""
+                    width="20"
+                    height="20"
+                    loading="lazy"
+                  />
+                  Facebook
+                </a>
+              </li>
+              <li class="footer__list-item">
+                <a class="footer__social-link" href="https://instagram.com" target="_blank" rel="noopener">
+                  <img
+                    class="footer__social-icon"
+                    src="./images/instagram_white.svg"
+                    alt=""
+                    width="20"
+                    height="20"
+                    loading="lazy"
+                  />
+                  Instagram
+                </a>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <div class="footer__copyright">© 2025 Luigi Benaduce</div>
+      </footer>
+    </div>
+  </body>
 </html>
