@@ -1,2 +1,6 @@
-.page { min-width: 320px; max-width: 1200px; margin: 0 auto; }
-.page__container { padding: 0 16px 48px; }
+.page {
+  min-width: 320px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 16px 48px;
+}
