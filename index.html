@@ -11,114 +11,103 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="./pages/index.css">
-
-
-
-
-
-
-
-
-</head>
-<body class="body page">
-    <div class="page__container">
-      <header class="header">
-        <nav class="nav" aria-label="Navegação principal">
-          <img class="nav__logo" src="./images/logo_coffeeshop_dark.svg" alt="Logo Triple Espresso" width="142" height="32" />
-          <ul class="nav__links">
-            <li class="nav__item"><a href="#hero" class="nav__link">Início</a></li>
-            <li class="nav__item"><a href="#recipes" class="nav__link">Receitas</a></li>
-            <li class="nav__item"><a href="#reservation" class="nav__link">Reservar</a></li>
-            <li class="nav__item"><a href="#about" class="nav__link">Sobre</a></li>
-            <li class="nav__item"><a href="#contacts" class="nav__link">Contatos</a></li>
-          </ul>
-        </nav>
-      </header>
-
-      <main class="content">
-        <section id="hero" class="hero" aria-labelledby="hero-title">
-          <h1 id="hero-title" class="hero__title"><span class="hero__span-accent">Café especial</span> na biblioteca Triple Peaks</h1>
-          <p class="hero__description"><span class="hero__description-break">Esta é nossa zona de estudo! Temos aquele cafezinho para energizar</span> você e vibrações aconchegantes para soltar a criatividade.</p>
-          <img class="hero__image" src="./images/inside_coffee_shop.png" alt="Interior da cafeteria Tripleten Coffee Shop" loading="eager" width="1200" height="600" />
-          <div class="hero__footer">
-            <p class="hero__paragraph"><span>Horários:</span></p>
-            <p class="hero__paragraph"><span>Segunda a sexta (10:00 - 19:00)</span></p>
-            <p class="hero__paragraph"><span>Sábado a domingo (11:00 - 18:00)</span></p>
-            <p class="hero__paragraph">200 Success Avenue, cidade de Triple Peaks</p>
-          </div>
-        </section>
-
-        <section id="recipes" class="recipes" aria-labelledby="recipes-title">
-          <h2 id="recipes-title" class="recipes__title">Receitas</h2>
-          <p class="recipes__subtitle">Confira algumas receitas que coletamos para seu lanchinho caseiro:</p>
-          <div class="recipes__videos">
-            <article class="recipes__video-item">
-              <h3 class="visually-hidden">Vídeo 1</h3>
-              <iframe class="recipes__iframe" src="https://www.youtube.com/embed/SfG1erJg8cI?si=glXqax4S3VZ_aFDZ" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-              <p class="recipes__video-caption">Vídeo 1</p>
-            </article>
-            <article class="recipes__video-item">
-              <h3 class="visually-hidden">Vídeo 2</h3>
-              <iframe class="recipes__iframe" src="https://www.youtube.com/embed/XOBO0lEMDgo?si=PasfochSkooGFjPC" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-              <p class="recipes__video-caption">Vídeo 2</p>
-            </article>
-          </div>
-        </section>
-
-        <section id="reservation" class="reservation" aria-labelledby="reservation-title">
-          <div class="reservation__content">
-            <h2 id="reservation-title" class="reservation__title">Reservar uma mesa</h2>
-            <form class="reservation__form form" action="#" method="post" novalidate>
-              <fieldset class="form__fieldset">
-                <legend class="form__legend">Dados da reserva</legend>
-                <label for="name" class="form__label">Nome *</label>
-                <input type="text" class="form__input" id="name" name="name" placeholder="Nome" minlength="2" required />
-                <label for="numero" class="form__label">Número de convidados *</label>
-                <input type="number" class="form__input" id="numero" name="guests" placeholder="1-8" min="1" max="8" required />
-                <label for="data" class="form__label">Data e hora *</label>
-                <input type="datetime-local" class="form__input" id="data" name="datetime" required />
-                <label for="email" class="form__label">Seu e-mail *</label>
-                <input type="email" class="form__input" id="email" name="email" placeholder="email@email.com" inputmode="email" autocomplete="email" required />
-                <div class="form__controls">
-                  <input type="checkbox" class="form__checkbox-input" id="termos" name="terms" required />
-                  <label for="termos" class="form__checkbox-label">Eu concordo com os termos de uso *</label>
-                </div>
-                <button class="form__button form__button_type_submit" type="submit">Reservar uma mesa</button>
-              </fieldset>
-            </form>
-          </div>
-        </section>
-
-        <section id="about" class="about" aria-labelledby="about-title">
-          <h2 id="about-title" class="about__title">Sobre e contatos</h2>
-          <div class="about__grid">
-            <div class="about__brand">
-              <img class="about__logo" src="./images/logo_coffeeshop_light.svg" alt="Logo Triple Espresso" width="142" height="32" />
-              <p class="about__text">Café especial, ambiente acolhedor e espaço ideal para estudar e criar.</p>
+    <link rel="stylesheet" href="./pages/index.css">
+  </head>
+  <body>
+    <div class="page">
+      <div class="page__container">
+        <header class="header">
+          <nav class="nav" aria-label="Navegação principal">
+            <img class="nav__logo" src="./images/logo_coffeeshop_dark.svg" alt="Logo Triple Espresso" width="142" height="32" />
+            <ul class="nav__links">
+              <li class="nav__item"><a href="#hero" class="nav__link">Início</a></li>
+              <li class="nav__item"><a href="#recipes" class="nav__link">Receitas</a></li>
+              <li class="nav__item"><a href="#reservation" class="nav__link">Reservar</a></li>
+              <li class="nav__item"><a href="#about" class="nav__link">Sobre</a></li>
+              <li class="nav__item"><a href="#contacts" class="nav__link">Contatos</a></li>
+            </ul>
+          </nav>
+        </header>
+        <main class="content">
+          <section id="hero" class="hero" aria-labelledby="hero-title">
+            <h1 id="hero-title" class="hero__title"><span class="hero__span-accent">Café especial</span> na biblioteca Triple Peaks</h1>
+            <p class="hero__description"><span class="hero__description-break">Esta é nossa zona de estudo! Temos aquele cafezinho para energizar</span> você e vibrações aconchegantes para soltar a criatividade.</p>
+            <img class="hero__image" src="./images/inside_coffee_shop.png" alt="Interior da cafeteria Tripleten Coffee Shop" loading="eager" width="1200" height="600" />
+            <div class="hero__footer">
+              <p class="hero__paragraph"><span>Horários:</span></p>
+              <p class="hero__paragraph"><span>Segunda a sexta (10:00 - 19:00)</span></p>
+              <p class="hero__paragraph"><span>Sábado a domingo (11:00 - 18:00)</span></p>
+              <p class="hero__paragraph">200 Success Avenue, cidade de Triple Peaks</p>
             </div>
-            <div class="about__social">
-              <h3 class="about__social-heading">Mídia social</h3>
-              <ul class="about__list">
-                <li class="about__list-item">
-                  <a class="about__social-link" href="https://facebook.com" target="_blank" rel="noopener">
-                    <img class="about__social-icon" src="./images/facebook_white.svg" alt="" width="20" height="20" /> Facebook
-                  </a>
-                </li>
-                <li class="about__list-item">
-                  <a class="about__social-link" href="https://instagram.com" target="_blank" rel="noopener">
-                    <img class="about__social-icon" src="./images/instagram_white.svg" alt="" width="20" height="20" /> Instagram
-                  </a>
-                </li>
-              </ul>
+          </section>
+          <section id="recipes" class="recipes" aria-labelledby="recipes-title">
+            <h2 id="recipes-title" class="recipes__title">Receitas</h2>
+            <p class="recipes__subtitle">Confira algumas receitas que coletamos para seu lanchinho caseiro:</p>
+            <div class="recipes__videos">
+              <article class="recipes__video-item">
+                <h3 class="visually-hidden">Vídeo 1</h3>
+                <iframe class="recipes__iframe" src="https://www.youtube.com/embed/SfG1erJg8cI?si=glXqax4S3VZ_aFDZ" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <p class="recipes__video-caption">Vídeo 1</p>
+              </article>
+              <article class="recipes__video-item">
+                <h3 class="visually-hidden">Vídeo 2</h3>
+                <iframe class="recipes__iframe" src="https://www.youtube.com/embed/XOBO0lEMDgo?si=PasfochSkooGFjPC" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <p class="recipes__video-caption">Vídeo 2</p>
+              </article>
             </div>
-          </div>
-        </section>
-      </main>
-
-      <footer class="footer" id="contacts">
-        <div class="footer__copyright">© 2025 Luigi Benaduce</div>
-      </footer>
+          </section>
+          <section id="reservation" class="reservation" aria-labelledby="reservation-title">
+            <div class="reservation__content">
+              <h2 id="reservation-title" class="reservation__title">Reservar uma mesa</h2>
+              <form class="reservation__form form" action="#" method="post" novalidate>
+                <fieldset class="form__fieldset">
+                  <legend class="form__legend">Dados da reserva</legend>
+                  <label for="name" class="form__label">Nome *</label>
+                  <input type="text" class="form__input" id="name" name="name" placeholder="Nome" minlength="2" required />
+                  <label for="numero" class="form__label">Número de convidados *</label>
+                  <input type="number" class="form__input" id="numero" name="guests" placeholder="1-8" min="1" max="8" required />
+                  <label for="data" class="form__label">Data e hora *</label>
+                  <input type="datetime-local" class="form__input" id="data" name="datetime" required />
+                  <label for="email" class="form__label">Seu e-mail *</label>
+                  <input type="email" class="form__input" id="email" name="email" placeholder="email@email.com" inputmode="email" autocomplete="email" required />
+                  <div class="form__controls">
+                    <input type="checkbox" class="form__checkbox-input" id="termos" name="terms" required />
+                    <label for="termos" class="form__checkbox-label">Eu concordo com os termos de uso *</label>
+                  </div>
+                  <button class="form__button form__button_type_submit" type="submit">Reservar uma mesa</button>
+                </fieldset>
+              </form>
+            </div>
+          </section>
+          <section id="about" class="about" aria-labelledby="about-title">
+            <h2 id="about-title" class="about__title">Sobre e contatos</h2>
+            <div class="about__grid">
+              <div class="about__brand">
+                <img class="about__logo" src="./images/logo_coffeeshop_light.svg" alt="Logo Triple Espresso" width="142" height="32" />
+                <p class="about__text">Café especial, ambiente acolhedor e espaço ideal para estudar e criar.</p>
+              </div>
+              <div class="about__social">
+                <h3 class="about__social-heading">Mídia social</h3>
+                <ul class="about__list">
+                  <li class="about__list-item">
+                    <a class="about__social-link" href="https://facebook.com" target="_blank" rel="noopener">
+                      <img class="about__social-icon" src="./images/facebook_white.svg" alt="" width="20" height="20" /> Facebook
+                    </a>
+                  </li>
+                  <li class="about__list-item">
+                    <a class="about__social-link" href="https://instagram.com" target="_blank" rel="noopener">
+                      <img class="about__social-icon" src="./images/instagram_white.svg" alt="" width="20" height="20" /> Instagram
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </section>
+        </main>
+        <footer class="footer" id="contacts">
+          <div class="footer__copyright">© 2025 Luigi Benaduce</div>
+        </footer>
+      </div>
     </div>
   </body>
 </html>
