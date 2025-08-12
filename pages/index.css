@@ -9,3 +9,7 @@
 @import url("../blocks/form/form.css");
 @import url("../blocks/footer/footer.css");
 @import url("../blocks/visually-hidden/visually-hidden.css");
+
+.page {
+    display: block;
+}
