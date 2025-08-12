@@ -7,16 +7,12 @@
   padding: 0 16px 48px;
 }
 
-.header {
-  padding: 20px 0;
-}
+.header { padding: 20px 0; }
+.content { padding: 20px 0; }
+.footer { background-color: #222; color: #fff; padding: 20px 0; }
 
-.content {
-  padding: 20px 0;
-}
-
-.footer {
-  background-color: #222;
-  color: #fff;
-  padding: 20px 0;
-}
+.hero {}
+.recipes {}
+.reservation {}
+.about {}
+.contacts {}
