@@ -1,12 +1,1 @@
-.footer{background:#0A2850;color:#ffffff;padding:60px 24px 60px;position:relative;overflow:hidden}
-.footer__content{position:relative;display:flex;align-items:flex-start;justify-content:space-between;gap:60px;z-index:2}
-.footer__logo{width:105px;height:39px;position:relative;z-index:2}
-.footer__circle{position:absolute;left:-60px;bottom:-60px;width:340px;height:340px;border-radius:50%;background:#2F80ED;z-index:1}
-.footer__social{margin-left:auto}
-.footer__social-heading{font-family:'Inter', Arial, sans-serif;font-style:normal;font-weight:700;font-size:16px;line-height:20px;margin:0 0 20px}
-.footer__list{list-style:none;margin:0;padding:0;display:grid;gap:10px}
-.footer__list-item{font-family:'Inter', Arial, sans-serif;font-style:normal;font-weight:400;font-size:16px;line-height:20px}
-.footer__social-link{display:inline-flex;align-items:center;gap:8px;color:#ffffff;text-decoration:none;transition:color .15s ease}
-.footer__social-link:hover{color:#C1C1C1}
-.footer__bullet{display:inline-block;width:8px;height:8px;border-radius:50%;border:2px solid currentColor}
-.footer__copyright{margin:20px 0 0;font-family:'Inter', Arial, sans-serif;font-style:normal;font-weight:400;font-size:16px;line-height:20px;text-align:left;color:#ffffff;position:relative;z-index:2}
+.footer{background:#0A2850;color:#ffffff;padding:60px 24px 60px;position:relative;overflow:hidden}.footer__content{position:relative;display:flex;align-items:flex-start;justify-content:space-between;gap:60px;z-index:2}.footer__logo{width:105px;height:39px;position:relative;z-index:2}.footer__circle{position:absolute;left:-60px;bottom:-60px;width:340px;height:340px;border-radius:50%;background:#2F80ED;z-index:1}.footer__social{margin-left:auto}.footer__social-heading{font-family:'Inter', Arial, sans-serif;font-style:normal;font-weight:700;font-size:16px;line-height:20px;margin:0 0 20px}.footer__list{list-style:none;margin:0;padding:0;display:grid;gap:10px}.footer__list-item{font-family:'Inter', Arial, sans-serif;font-style:normal;font-weight:400;font-size:16px;line-height:20px}.footer__social-link{display:inline-flex;align-items:center;gap:8px;color:#ffffff;text-decoration:none;transition:color .15s ease}.footer__social-link:hover{color:#C1C1C1}.footer__bullet{display:inline-block;width:8px;height:8px;border-radius:50%;border:2px solid currentColor}.footer__copyright{margin:20px 0 0;font-family:'Inter', Arial, sans-serif;font-style:normal;font-weight:400;font-size:16px;line-height:20px;text-align:left;color:#ffffff;position:relative;z-index:2}
