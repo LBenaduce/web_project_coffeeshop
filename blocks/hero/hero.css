@@ -1,9 +1,9 @@
-.hero{display:grid;gap:16px;padding:24px}
-.hero__title{font-family:'Noto Serif','Times New Roman',serif;font-style:italic;font-weight:400;font-size:40px;line-height:1.2;margin:0}
+.hero{display:grid;gap:20px;padding:32px}
+.hero__title{font-family:'Noto Serif','Times New Roman',serif;font-style:italic;font-weight:400;font-size:60px;line-height:1.1;margin:0}
 .hero__span-accent{color:#2F80ED}
-.hero__description{max-width:70ch;margin:0}
+.hero__description{max-width:720px;margin:0}
 .hero__description-break{display:block}
 .hero__image{width:100%;height:auto;display:block;border-radius:16px}
 .hero__footer{display:grid;gap:4px;color:#6F6F6F}
 .hero__paragraph{margin:0}
-@media (min-width:768px){.hero__title{font-size:56px}}
+@media (min-width:768px){.hero__title{font-size:64px}}

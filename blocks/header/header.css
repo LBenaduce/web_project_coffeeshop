@@ -1,8 +1,1 @@
-.header {
-  background: #ffffff;
-  position: sticky;
-  top: 0;
-  z-index: 10;
-  border-bottom: 1px solid rgba(0,0,0,.06);
-  color: #000000;
-}
+.header{background:#ffffff;color:#000000;position:sticky;top:0;z-index:10;border-bottom:1px solid rgba(0,0,0,.06)}
