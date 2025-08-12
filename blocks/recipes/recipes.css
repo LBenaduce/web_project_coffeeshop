@@ -7,6 +7,3 @@
 .recipes__video-item{display:grid;gap:8px}
 .recipes__iframe{width:100%;aspect-ratio:16/9;border:0;border-radius:6px}
 .recipes__meta{display:flex;justify-content:space-between;font-size:12px;opacity:.9}
-/* decor circle */
-.recipes::before{content:'';position:absolute;left:18%;top:32%;width:360px;height:360px;border-radius:50%;background:rgba(255,255,255,.06)}
-.recipes::after{content:'';position:absolute;right:80px;top:24%;width:80px;height:80px;border-radius:50%;background:rgba(255,255,255,.06)}
