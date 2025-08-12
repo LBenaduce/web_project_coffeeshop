@@ -1,0 +1,7 @@
+.recipes { padding: 48px 0; }
+.recipes__title { font-family: var(--font-serif); font-size: 32px; margin: 0 0 8px; }
+.recipes__subtitle { margin: 0 0 24px; }
+.recipes__videos { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 16px; }
+.recipes__video-item { display: grid; gap: 8px; }
+.recipes__iframe { width: 100%; aspect-ratio: 16 / 9; border: 0; border-radius: 12px; }
+.recipes__video-caption { font-size: 14px; color: #555; }
