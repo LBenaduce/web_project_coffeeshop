@@ -1,4 +1,1 @@
-.nav { display: flex; align-items: center; justify-content: space-between; padding: 24px 0; }
-.nav__links { display: flex; gap: 24px; list-style: none; margin: 0; padding: 0; }
-.nav__link { font-weight: 500; }
-.nav__link:focus-visible { outline: 2px solid currentColor; outline-offset: 2px; }
+.nav { display: flex; align-items: center; justify-content: space-between; padding: 24px 0; } .nav__links { display: flex; gap: 24px; list-style: none; margin: 0; padding: 0; } .nav__link { font-weight: 500; } .nav__link:focus-visible { outline: 2px solid currentColor; outline-offset: 2px; }
