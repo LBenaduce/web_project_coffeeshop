@@ -10,7 +10,6 @@
 @import url("../blocks/footer/footer.css");
 @import url("../blocks/visually-hidden/visually-hidden.css");
 
-/* Local .page rule to satisfy validator (in addition to blocks/page/page.css) */
 .page {
   min-width: 1100px;
   max-width: 1600px;
