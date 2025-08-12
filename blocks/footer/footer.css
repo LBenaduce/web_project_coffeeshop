@@ -1,17 +1,7 @@
-.footer { margin-top: 56px; padding: 32px 0; position: relative; }
-.footer__circle { position: absolute; right: 16px; top: -20px; width: 120px; height: 120px; border-radius: 50%; background: rgba(0,0,0,.06); pointer-events: none; }
+.footer { margin-top: 56px; padding: 32px 0; position: relative; background-color: var(--color-footer-bg); color: var(--color-footer-text); }
+.footer__circle { position: absolute; right: 16px; top: -20px; width: 120px; height: 120px; border-radius: 50%; background: rgba(255,255,255,.08); pointer-events: none; }
 .footer__content { display: grid; gap: 16px; }
 .footer__social-heading { margin: 0; font-weight: 600; }
 .footer__list { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; }
 .footer__social-link { display: inline-flex; align-items: center; gap: 8px; }
-.footer__copyright { margin-top: 16px; font-size: 14px; color: #666; }
-.footer {
-  margin-top: 56px;
-  padding: 32px 0;
-  position: relative;
-
-  background-color: var(--color-footer-bg);
-  color: var(--color-footer-text);
-}
-
-
+.footer__copyright { margin-top: 16px; font-size: 14px; color: #ddd; }
