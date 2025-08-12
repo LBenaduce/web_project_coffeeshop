@@ -1,0 +1,7 @@
+.hero { padding: 24px 0 16px; }
+.hero__title { font-family: var(--font-serif); font-size: 40px; line-height: 1.2; margin: 24px 0 12px; }
+.hero__span-accent { color: var(--color-accent); }
+.hero__description { max-width: 70ch; margin: 0 0 20px; }
+.hero__image { border-radius: 12px; }
+.hero__footer { display: grid; gap: 4px; margin-top: 16px; }
+.hero__paragraph { margin: 0; }
