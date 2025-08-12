@@ -10,11 +10,12 @@
     <link rel="shortcut icon" href="./favicon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Noto+Serif:ital,wght@1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./pages/index.css">
   </head>
-  <body class="page">
+  <body>
     <div class="page">
+      
       <header class="header">
         <nav class="nav" aria-label="Navegação principal">
           <img class="nav__logo" src="./images/logo_coffeeshop_dark.svg" alt="Logo Triple Espresso" width="142" height="32">
@@ -27,6 +28,7 @@
           </ul>
         </nav>
       </header>
+
       <main class="content">
         <section id="hero" class="hero" aria-labelledby="hero-title">
           <h1 id="hero-title" class="hero__title"><span class="hero__span-accent">Café especial</span> na biblioteca Triple Peaks</h1>
@@ -39,22 +41,24 @@
             <p class="hero__paragraph">200 Success Avenue, cidade de Triple Peaks</p>
           </div>
         </section>
+
         <section id="recipes" class="recipes" aria-labelledby="recipes-title">
           <h2 id="recipes-title" class="recipes__title">Receitas</h2>
           <p class="recipes__subtitle">Confira algumas receitas que coletamos para seu lanchinho caseiro:</p>
           <div class="recipes__videos">
             <article class="recipes__video-item">
               <h3 class="visually-hidden">Vídeo 1</h3>
-              <iframe class="recipes__iframe" src="https://www.youtube.com/embed/SfG1erJg8cI?si=glXqax4S3VZ_aFDZ" title="YouTube video player" allowfullscreen></iframe>
+              <iframe class="recipes__iframe" src="https://www.youtube.com/embed/SfG1erJg8cI?si=glXqax4S3VZ_aFDZ" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
               <p class="recipes__video-caption">Vídeo 1</p>
             </article>
             <article class="recipes__video-item">
               <h3 class="visually-hidden">Vídeo 2</h3>
-              <iframe class="recipes__iframe" src="https://www.youtube.com/embed/XOBO0lEMDgo?si=PasfochSkooGFjPC" title="YouTube video player" allowfullscreen></iframe>
+              <iframe class="recipes__iframe" src="https://www.youtube.com/embed/XOBO0lEMDgo?si=PasfochSkooGFjPC" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
               <p class="recipes__video-caption">Vídeo 2</p>
             </article>
           </div>
         </section>
+
         <section id="reservation" class="reservation" aria-labelledby="reservation-title">
           <div class="reservation__content">
             <h2 id="reservation-title" class="reservation__title">Reservar uma mesa</h2>
@@ -78,6 +82,7 @@
             </form>
           </div>
         </section>
+
         <section id="about" class="about" aria-labelledby="about-title">
           <h2 id="about-title" class="about__title">Sobre e contatos</h2>
           <div class="about__grid">
@@ -103,9 +108,11 @@
           </div>
         </section>
       </main>
+
       <footer class="footer" id="contacts">
         <div class="footer__copyright">© 2025 Luigi Benaduce</div>
       </footer>
+
     </div>
   </body>
 </html>
