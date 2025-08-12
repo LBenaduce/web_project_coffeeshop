@@ -8,10 +8,10 @@
     <meta name="keywords" content="café, tripleten, vídeo, receitas">
     <title>Café</title>
     <link rel="shortcut icon" href="./favicon.ico">
+    <link rel="stylesheet" href="./pages/index.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Noto+Serif:ital,wght@1,400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./pages/index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   </head>
   <body>
     <div class="page">
@@ -29,8 +29,8 @@
       </header>
 
       <main class="content">
-        <section id="hero" class="hero" aria-labelledby="hero-title">
-          <h1 id="hero-title" class="hero__title"><span class="hero__span-accent">Café especial</span> na biblioteca Triple Peaks</h1>
+        <section id="hero" class="hero">
+          <h1 class="hero__title"><span class="hero__span-accent">Café especial</span> na biblioteca Triple Peaks</h1>
           <p class="hero__description"><span class="hero__description-break">Esta é nossa zona de estudo! Temos aquele cafezinho para energizar</span> você e vibrações aconchegantes para soltar a criatividade.</p>
           <img class="hero__image" src="./images/inside_coffee_shop.png" alt="Interior da cafeteria Tripleten Coffee Shop" loading="eager" width="1200" height="600">
           <div class="hero__footer">
@@ -41,26 +41,24 @@
           </div>
         </section>
 
-        <section id="recipes" class="recipes" aria-labelledby="recipes-title">
-          <h2 id="recipes-title" class="recipes__title">Receitas</h2>
+        <section id="recipes" class="recipes">
+          <h2 class="recipes__title">Receitas</h2>
           <p class="recipes__subtitle">Confira algumas receitas que coletamos para seu lanchinho caseiro:</p>
           <div class="recipes__videos">
             <article class="recipes__video-item">
-              <h3 class="visually-hidden">Vídeo 1</h3>
-              <iframe class="recipes__iframe" src="https://www.youtube.com/embed/SfG1erJg8cI?si=glXqax4S3VZ_aFDZ" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-              <p class="recipes__video-caption">Vídeo 1</p>
+              <iframe class="recipes__iframe" src="https://www.youtube.com/embed/SfG1erJg8cI?si=glXqax4S3VZ_aFDZ" title="Receita: Tofu Mexido" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              <p class="recipes__video-caption">Receita Tofu Mexido ~15 min</p>
             </article>
             <article class="recipes__video-item">
-              <h3 class="visually-hidden">Vídeo 2</h3>
-              <iframe class="recipes__iframe" src="https://www.youtube.com/embed/XOBO0lEMDgo?si=PasfochSkooGFjPC" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-              <p class="recipes__video-caption">Vídeo 2</p>
+              <iframe class="recipes__iframe" src="https://www.youtube.com/embed/XOBO0lEMDgo?si=PasfochSkooGFjPC" title="Receita: Chocolate Quente Vegano" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              <p class="recipes__video-caption">Receita de Chocolate Quente Vegano ~4 min</p>
             </article>
           </div>
         </section>
 
-        <section id="reservation" class="reservation" aria-labelledby="reservation-title">
+        <section id="reservation" class="reservation">
           <div class="reservation__content">
-            <h2 id="reservation-title" class="reservation__title">Reservar uma mesa</h2>
+            <h2 class="reservation__title">Reservar uma mesa</h2>
             <form class="reservation__form form" action="#" method="post" novalidate>
               <fieldset class="form__fieldset">
                 <legend class="form__legend">Dados da reserva</legend>
@@ -82,34 +80,31 @@
           </div>
         </section>
 
-        <section id="about" class="about" aria-labelledby="about-title">
-          <h2 id="about-title" class="about__title">Sobre</h2>
-          <div class="about__grid">
-            <div class="about__brand">
-              <img class="about__logo" src="./images/logo_coffeeshop_light.svg" alt="Logo Triple Espresso" width="142" height="32">
-              <p class="about__text">Café especial, ambiente acolhedor e espaço ideal para estudar e criar.</p>
-            </div>
-          </div>
-        </section>
-
-        <section id="contacts" class="contacts" aria-labelledby="contacts-title">
-          <h2 id="contacts-title" class="contacts__title">Contatos</h2>
-          <ul class="contacts__list">
-            <li class="contacts__item">
-              <a class="contacts__link" href="https://facebook.com" target="_blank" rel="noopener">
-                <img class="contacts__icon" src="./images/facebook_white.svg" alt="" width="20" height="20"> Facebook
-              </a>
-            </li>
-            <li class="contacts__item">
-              <a class="contacts__link" href="https://instagram.com" target="_blank" rel="noopener">
-                <img class="contacts__icon" src="./images/instagram_white.svg" alt="" width="20" height="20"> Instagram
-              </a>
-            </li>
-          </ul>
+        <section id="about" class="about">
+          <h2 class="about__title">Sobre</h2>
+          <p class="about__text">Café especial, ambiente acolhedor e espaço ideal para estudar e criar.</p>
         </section>
       </main>
 
-      <footer class="footer" id="rodape">
+      <footer class="footer" id="contacts">
+        <section class="footer__content">
+          <img class="footer__logo" src="./images/logo_coffeeshop_light.svg" alt="Logo Triple Espresso" width="142" height="32" loading="lazy">
+          <div class="footer__social">
+            <h3 class="footer__social-heading">Mídia social</h3>
+            <ul class="footer__list">
+              <li class="footer__list-item">
+                <a class="footer__social-link" href="https://facebook.com" target="_blank" rel="noopener">
+                  <img class="footer__social-icon" src="./images/facebook_white.svg" alt="" width="20" height="20" loading="lazy"> Facebook
+                </a>
+              </li>
+              <li class="footer__list-item">
+                <a class="footer__social-link" href="https://instagram.com" target="_blank" rel="noopener">
+                  <img class="footer__social-icon" src="./images/instagram_white.svg" alt="" width="20" height="20" loading="lazy"> Instagram
+                </a>
+              </li>
+            </ul>
+          </div>
+        </section>
         <div class="footer__copyright">© 2025 Luigi Benaduce</div>
       </footer>
     </div>

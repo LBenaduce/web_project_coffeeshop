@@ -1,8 +1,22 @@
 @import url("../vendor/normalize.css");
-@import url("../blocks/page/page.css");
+
 .page {
   min-width: 320px;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 16px 48px; 
+  padding: 0 16px 48px;
+}
+
+.header {
+  padding: 20px 0;
+}
+
+.content {
+  padding: 20px 0;
+}
+
+.footer {
+  background-color: #222;
+  color: #fff;
+  padding: 20px 0;
 }
