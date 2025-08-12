@@ -1,2 +1,13 @@
-.footer{margin-top:56px;padding:24px 0;border-top:1px solid #1e1e1e}
-.footer__copyright{color:#bdbdbd;text-align:center;font-size:14px}
+.footer{background:#0A2850;color:#ffffff;padding:60px 24px;position:relative;overflow:hidden}
+.footer__content{display:flex;align-items:flex-start;justify-content:space-between;gap:60px;position:relative}
+.footer__brand{position:relative;display:flex;align-items:center;height:108px}
+.footer__logo{width:105px;height:39px;position:relative;z-index:2}
+.footer__circle{position:absolute;left:-60px;top:-60px;width:340px;height:340px;border-radius:50%;background:#2F80ED;z-index:1}
+.footer__social{margin-left:auto}
+.footer__social-heading{font-family:'Inter', Arial, sans-serif;font-style:normal;font-weight:700;font-size:16px;line-height:20px;margin:0 0 20px}
+.footer__list{list-style:none;margin:0;padding:0;display:grid;gap:16px}
+.footer__list-item{margin:0;padding:0}
+.footer__social-link{display:inline-flex;align-items:center;gap:10px;text-decoration:none;color:#ffffff;transition:color .15s ease}
+.footer__social-link:hover,.footer__social-link:focus{color:#C1C1C1;outline:none}
+.footer__social-icon{width:16px;height:16px}
+.footer__copyright{margin:128px 0 0;font-family:'Inter', Arial, sans-serif;font-style:normal;font-weight:400;font-size:16px;line-height:20px;text-align:left}
