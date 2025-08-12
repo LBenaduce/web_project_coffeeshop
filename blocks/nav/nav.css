@@ -1,4 +1,4 @@
-.nav{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:16px 24px}
+.nav{display:flex;align-items:center;justify-content:space-between;padding:14px 24px}
 .nav__links{list-style:none;display:flex;gap:24px;margin:0;padding:0}
-.nav__link{text-decoration:none;color:#000000;padding:8px 10px;border-radius:10px}
-.nav__link:hover,.nav__link:focus{color:#2F80ED;outline:none}
+.nav__link{color:#000000;text-decoration:none}
+.nav__link:hover{color:#2F80ED}

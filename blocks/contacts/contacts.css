@@ -1,5 +1,1 @@
-.contacts{padding:40px 24px}
-.contacts__title{margin:0 0 8px;font-size:28px}
-.contacts__list{margin:0;padding:0;list-style:none;display:grid;gap:10px}
-.contacts__link{display:inline-flex;align-items:center;gap:8px;text-decoration:none;color:#2F80ED}
-.contacts__link:hover,.contacts__link:focus{text-decoration:underline;outline:none}
+.contacts{}
