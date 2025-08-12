@@ -1,0 +1,7 @@
+.nav{display:flex;align-items:center;justify-content:space-between;gap:24px;padding:16px 24px}
+.nav__logo{height:32px;width:auto}
+.nav__links{display:flex;gap:16px;flex-wrap:wrap}
+.nav__item{}
+.nav__link{padding:8px 10px;border-radius:12px;transition:transform .15s ease,opacity .15s ease}
+.nav__link:hover{opacity:.9;transform:translateY(-1px)}
+@media (min-width:1024px){.nav{padding:18px 32px}}

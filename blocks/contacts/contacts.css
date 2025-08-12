@@ -1,0 +1,7 @@
+.contacts{margin-top:48px}
+.contacts__title{margin:0 0 8px 0;font-size:28px}
+.contacts__list{display:flex;gap:12px;flex-wrap:wrap}
+.contacts__item{}
+.contacts__link{display:inline-flex;align-items:center;gap:8px;padding:10px 12px;border-radius:12px;background:#151515}
+.contacts__link:hover{opacity:.9;transform:translateY(-1px)}
+.contacts__icon{display:inline-block}
