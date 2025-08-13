@@ -1,4 +1,5 @@
 .nav{display:flex;align-items:center;justify-content:space-between;gap:16px}
 .nav__links{display:flex;gap:16px;list-style:none;margin:0;padding:0}
-.nav__link{padding:8px 10px;transition:color .2s linear}
+.nav__logo{width:142px;height:auto;display:block}
+.nav__link{transition:color .2s linear}
 .nav__link:hover{color:#2F80ED}

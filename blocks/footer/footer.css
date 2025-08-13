@@ -1,13 +1,9 @@
-.footer{background:#0A2850;color:#fff;padding:40px 0;position:relative;overflow:hidden}
-.footer__content{max-width:1200px;margin:0 auto;padding:0 24px;display:flex;align-items:flex-start;justify-content:space-between;position:relative}
-.footer__logo{width:105px;height:39px}
-.footer__circle{position:absolute;width:340px;height:340px;border-radius:50%;background:#2F80ED;left:-44px;top:-80px;z-index:0}
-.footer__social{margin-left:auto;margin-right:80px;position:relative;z-index:1}
-.footer__social-heading{margin:0 0 10px;font:700 16px/20px "Inter", Arial, sans-serif}
+.footer{background:#0A2850;color:#fff;padding:40px 24px;position:relative;overflow:hidden}
+.footer__content{display:flex;flex-wrap:wrap;gap:24px;align-items:flex-start;justify-content:space-between;max-width:1200px;margin:0 auto}
+.footer__circle{position:absolute;left:-44px;top:-80px;width:340px;height:340px;border-radius:50%;background:#2F80ED}
+.footer__logo{width:105px;height:auto}
 .footer__list{list-style:none;margin:0;padding:0;display:grid;gap:10px}
-.footer__list-item{margin:0}
-.footer__social-link{display:inline-flex;align-items:center;gap:8px;font:400 16px/20px "Inter", Arial, sans-serif;color:#fff;transition:color .2s linear}
-.footer__social-link:hover{color:#C1C1C1}
-.footer__social-link:focus{color:#C1C1C1;outline:none}
 .footer__icon{width:16px;height:16px}
-.footer__copyright{max-width:1200px;margin:24px auto 0;padding:0 24px;color:#e5eaf3;position:relative;z-index:1}
+.footer__copyright{margin:24px 0 0;color:#e5eaf3;text-align:center;font-size:14px}
+.footer__social-link{transition:color .2s linear}
+.footer__social-link:hover,.footer__social-link:focus{color:#C1C1C1;outline:0}
