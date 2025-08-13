@@ -13,42 +13,117 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Noto+Serif:ital,wght@1,400&display=swap">
 </head>
-<body>
-  <div class="page">
-    <header class="header">
-      <h1 class="header__title">Café Triple Peaks</h1>
-      <nav class="nav">
-        <ul class="nav__links">
-          <li class="nav__item"><a class="nav__link" href="#hero">Início</a></li>
-          <li class="nav__item"><a class="nav__link" href="#recipes">Receitas</a></li>
-          <li class="nav__item"><a class="nav__link" href="#reservation">Reservar</a></li>
-          <li class="nav__item"><a class="nav__link" href="#contacts">Contatos</a></li>
-        </ul>
-      </nav>
-    </header>
+<body class="page">
+  <header class="header">
+    <nav class="nav">
+      <img class="nav__logo" src="./images/logo_coffeeshop_dark.svg" alt="Logo">
+      <ul class="nav__links">
+        <li class="nav__item"><a class="nav__link" href="#recipes">Receitas</a></li>
+        <li class="nav__item"><a class="nav__link" href="#reservation">Reservar uma mesa</a></li>
+        <li class="nav__item"><a class="nav__link" href="#contacts">Contatos</a></li>
+      </ul>
+    </nav>
 
-    <main class="content">
-      <section id="hero" class="hero">
-        <h2 class="hero__title"><span class="hero__span-accent">Café especial</span><br>na biblioteca Triple Peaks</h2>
-        <p class="hero__description">Aqui tem café de verdade! Temos aquele cafezinho sem açúcar para soltar a criatividade.</p>
-      </section>
+    <section id="hero" class="hero">
+      <div class="hero__inner">
+        <div class="hero__col hero__col_type_text">
+          <h1 class="hero__title">
+            <span class="hero__span-accent">Café especial</span><br>
+            na biblioteca Triple Peaks
+          </h1>
+          <p class="hero__description">Aqui tem café de verdade! Temos aquele cafezinho sem açúcar para soltar a criatividade.</p>
+          <div class="hero__footer">
+            <p class="hero__paragraph"><span>Horários:</span></p>
+            <p class="hero__paragraph"><span>Segunda a sexta (10:00 - 19:00)</span></p>
+            <p class="hero__paragraph"><span>Sábado a domingo (11:00 - 18:00)</span></p>
+          </div>
+        </div>
 
-      <section id="recipes" class="recipes">
+        <div class="hero__col hero__col_type_art">
+          <img class="hero__image" src="./images/inside_coffee_shop.png" alt="Interior da cafeteria Tripleten Coffee Shop">
+          <p class="hero__address">200 Success Avenue, a cidade de Triple Peaks</p>
+        </div>
+      </div>
+    </section>
+  </header>
+
+  <main class="content">
+    <section id="recipes" class="recipes">
+      <div class="recipes__inner">
         <h2 class="recipes__title">Receitas</h2>
-      </section>
+        <p class="recipes__subtitle">Confira algumas receitas que coletamos para seu lanchinho caseiro:</p>
 
-      <section id="reservation" class="reservation">
+        <div class="recipes__videos">
+          <article class="recipes__video-item">
+            <h3 class="recipes__video-title">Receita Aeropress</h3>
+            <iframe class="recipes__iframe" src="https://www.youtube.com/embed/SfG1erJg8cI?rel=0" title="Receita Aeropress" allowfullscreen></iframe>
+            <div class="recipes__meta"><span class="recipes__caption">Receita Aeropress</span><span class="recipes__time">~5 min</span></div>
+          </article>
+
+          <article class="recipes__video-item">
+            <h3 class="recipes__video-title">Receita de Prensa Francesa</h3>
+            <iframe class="recipes__iframe" src="https://www.youtube.com/embed/XOBO0lEMDgo?rel=0" title="Receita de Prensa Francesa" allowfullscreen></iframe>
+            <div class="recipes__meta"><span class="recipes__caption">Receita de Prensa Francesa</span><span class="recipes__time">~15 min</span></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="reservation" class="reservation">
+      <div class="reservation__decor reservation__decor_position_left"></div>
+      <div class="reservation__decor reservation__decor_position_right"></div>
+      <div class="reservation__inner">
         <h2 class="reservation__title">Reservar uma mesa</h2>
-      </section>
 
-      <section id="contacts" class="contacts">
-        <h2 class="contacts__title">Contatos</h2>
-      </section>
-    </main>
+        <form class="reservation__form form" action="" method="post">
+          <fieldset class="form__fieldset">
+            <legend class="form__legend">Dados da reserva</legend>
 
-    <footer class="footer">
-      <p class="footer__copyright">© 2025 Luigi Benaduce</p>
-    </footer>
-  </div>
+            <label class="form__label" for="name">Nome *</label>
+            <input class="form__input" id="name" name="name" type="text" minlength="2" placeholder="Nome" required>
+
+            <label class="form__label" for="numero">Número de convidados *</label>
+            <input class="form__input" id="numero" name="guests" type="number" min="1" max="8" placeholder="1-8" required>
+
+            <label class="form__label" for="data">Data e hora *</label>
+            <input class="form__input" id="data" name="datetime" type="datetime-local" required>
+
+            <label class="form__label" for="email">Seu e-mail *</label>
+            <input class="form__input" id="email" name="email" type="email" autocomplete="email" placeholder="email@email.com" required>
+
+            <button class="form__button" type="submit">Reservar uma mesa</button>
+
+            <div class="form__consent">
+              <input class="form__checkbox-input" id="termos" name="terms" type="checkbox" required>
+              <label class="form__checkbox-label" for="termos">Eu concordo com os termos de uso</label>
+            </div>
+          </fieldset>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__content" id="contacts">
+      <div class="footer__circle"></div>
+      <img class="footer__logo" src="./images/logo_coffeeshop_light.svg" alt="Logo">
+      <div class="footer__social">
+        <h2 class="footer__social-heading">Mídia social</h2>
+        <ul class="footer__list">
+          <li class="footer__list-item">
+            <a class="footer__social-link" href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+              <img class="footer__icon" src="./images/facebook_white.svg" alt="" width="16" height="16"> Facebook
+            </a>
+          </li>
+          <li class="footer__list-item">
+            <a class="footer__social-link" href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+              <img class="footer__icon" src="./images/instagram_white.svg" alt="" width="16" height="16"> Instagram
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <p class="footer__copyright">© 2025 Luigi Benaduce</p>
+  </footer>
 </body>
 </html>
