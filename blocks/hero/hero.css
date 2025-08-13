@@ -1,7 +1,0 @@
-.hero{padding:40px 24px;background:#fff url("../../images/background_header.svg") top right/520px no-repeat}
-.hero__inner{display:grid;gap:24px}
-@media (min-width:768px){.hero__inner{grid-template-columns:1fr 1fr;align-items:center}}
-.hero__title{margin:0 0 12px;font-size:32px;line-height:1.2;font-family:"Noto Serif",serif;font-style:italic}
-.hero__description{margin:0 0 16px}
-.hero__span-accent{color:#2F80ED;font-weight:700}
-.hero__address{margin-top:8px;font-size:14px;color:#6F6F6F}
