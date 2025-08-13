@@ -13,18 +13,21 @@
   border-radius: 50%;
   position: absolute;
   left: -44px;
-  z-index: 1;
+  z-index: 0; top: -80px;
 }
 
 .footer__logo {
   width: 105px;
   height: 39px;
   z-index: 2;
+  position: relative;
 }
 
 .footer__content {
   display: flex;
   justify-content: space-between;
+  position: relative;
+  z-index: 2;
 }
 
 .footer__social {
@@ -58,4 +61,7 @@
 .footer__copyright {
   color: #ffffff;
   margin: 108px 0 60px;
+  position: relative;
+  z-index: 2;
+  text-align: left;
 }
