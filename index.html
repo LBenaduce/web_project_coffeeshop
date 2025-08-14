@@ -1,66 +1,68 @@
 <!DOCTYPE html>
-<html lang="pt">
+
+<html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Pagina web com receitas de lanches, rapidas e praticas"
+      content="Página web com receitas de lanches, rápidas e práticas"
     />
     <meta name="author" content="Luigi Benaduce" />
-    <meta name="keywords" content="café, triplete, video" />
+    <meta name="keywords" content="café, tripleten, vídeo" />
     <title>Café</title>
     <link rel="shortcut icon" href="./favicon.ico" />
     <link rel="stylesheet" href="./pages/index.css" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Noto+Serif:ital,wght@1,400&display=swap"
       rel="stylesheet"
     />
   </head>
   <body>
-    <div class="page">
+    <div class="page" id="top">
       <header class="header">
-        <nav class="nav">
-          <img
-            class="nav__logo"
-            src="./images/logo_coffeeshop_dark.svg"
-            alt="Logo Triple Espresso"
-          />
-          <ul class="nav__links">
-            <li>
+        <nav class="nav" aria-label="Navegação principal">
+           <ul class="nav__links">
+      <li class="nav__link">
+          <a class="nav__logo-link" href="#top">
+            <img
+              class="nav__logo"
+              src="./images/logo_coffeeshop_dark.svg"
+              alt="Logo Triple Espresso"
+            />
+          </a>
+          <ul class="nav__list">
+            <li class="nav__item">
               <a href="#recipes" class="nav__link">Receitas</a>
             </li>
-            <li>
+            <li class="nav__item">
               <a href="#reservation" class="nav__link">Reservar uma mesa</a>
             </li>
-            <li>
+            <li class="nav__item">
               <a href="#contatos" class="nav__link">Contatos</a>
             </li>
           </ul>
+          </li>
+          </ul>
         </nav>
+
         <h1 class="header__title">
           <span class="header__span-accent">Café especial</span>
           na biblioteca Triple Peaks
         </h1>
         <p class="header__description">
-          <span class="header__description-break"
-            >Café de verdade somente aqui! Café sem açúcar para
-            energizar</span
-          >
+          <span class="header__description-break">
+            Café de verdade somente aqui! Café sem açúcar para energizar
+          </span>
           você e vibrações aconchegantes para soltar a criatividade.
         </p>
         <img
           class="header__image"
           src="./images/inside_coffee_shop.png"
-          alt="The Tripleten Coffe Shop"
+          alt="Interior da TripleTen Coffee Shop"
         />
         <div class="header__footer">
           <p class="header__paragraph"><span>Horários:</span></p>
@@ -71,10 +73,11 @@
             <span>Sábado a domingo (11:00 - 18:00)</span>
           </p>
           <p class="header__paragraph">
-            200 Success Avenue, a cidade de Triple Peaks
+            200 Success Avenue, cidade de Triple Peaks
           </p>
         </div>
       </header>
+
       <main class="content">
         <section id="recipes" class="recipes">
           <h2 class="recipes__title">Receitas</h2>
@@ -86,7 +89,7 @@
               <iframe
                 class="recipes__iframe"
                 src="https://www.youtube.com/embed/SfG1erJg8cI?rel=0"
-                title="YouTube video player"
+                title="Café Moka — YouTube"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 referrerpolicy="strict-origin-when-cross-origin"
                 allowfullscreen
@@ -97,32 +100,33 @@
               <iframe
                 class="recipes__iframe"
                 src="https://www.youtube.com/embed/XOBO0lEMDgo?rel=0"
-                title="YouTube video player"
+                title="Prensa Francesa — YouTube"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 referrerpolicy="strict-origin-when-cross-origin"
                 allowfullscreen
               ></iframe>
-              <p class="recipes__video-caption">
-                Receita de Prensa Francesa
-              </p>
+              <p class="recipes__video-caption">Receita de Prensa Francesa</p>
             </div>
           </div>
         </section>
+
         <section id="reservation" class="reservation">
           <div class="reservation__content">
             <h2 class="reservation__title">Reservar uma mesa</h2>
-            <form class="reservation__form form">
+            <form class="reservation__form form" action="#" method="post" novalidate>
               <fieldset class="form__fieldset">
+                <legend class="form__legend">Dados da reserva</legend>
+
                 <label for="name" class="form__label">Nome *</label>
                 <input
                   type="text"
                   class="form__input"
                   id="name"
                   placeholder="Nome"
+                  required
                 />
-                <label for="numero" class="form__label"
-                  >Número de convidados *</label
-                >
+
+                <label for="numero" class="form__label">Número de convidados *</label>
                 <input
                   type="number"
                   class="form__input"
@@ -130,65 +134,80 @@
                   placeholder="1-8"
                   min="1"
                   max="8"
+                  required
                 />
-                <label for="data" class="form__label">Data e hora: *</label>
-                <input type="datetime-local" class="form__input" id="data" />
-                <label for="email" class="form__label">Seu e-mail: *</label>
+
+                <label for="data" class="form__label">Data e hora *</label>
+                <input
+                  type="datetime-local"
+                  class="form__input"
+                  id="data"
+                  required
+                />
+
+                <label for="email" class="form__label">Seu e-mail *</label>
                 <input
                   type="email"
                   class="form__input"
                   id="email"
                   placeholder="email@email.com"
+                  required
                 />
-                <button class="form__button" type="submit">
-                  Reservar uma mesa
-                </button>
-                <input
-                  type="checkbox"
-                  class="form__checkbox"
-                  id="termos"
-                  checked
-                />
-                <label for="termos" class="form__label">
-                  Eu concordo com os termos de uso
+
+                <label class="form__checkbox-row">
+                  <input
+                    type="checkbox"
+                    class="form__checkbox"
+                    id="termos"
+                    checked
+                    required
+                  />
+                  <span class="form__label">Eu concordo com os termos de uso</span>
                 </label>
+
+                <button class="form__button" type="submit">Reservar uma mesa</button>
               </fieldset>
             </form>
           </div>
         </section>
       </main>
+
       <footer class="footer">
-        <div class="footer__circle"></div>
-        <section class="footer__content" id="contatos">
+        <div class="footer__circle" aria-hidden="true"></div>
+
+        <section class="footer__content" id="contatos" aria-labelledby="contatos-title">
           <img
             class="footer__logo"
             src="./images/logo_coffeeshop_light.svg"
             alt="Logo Triple Espresso"
           />
           <div class="footer__social">
-            <h4 class="footer__social-heading">Mídia social</h4>
+            <h4 id="contatos-title" class="footer__social-heading">Mídia social</h4>
             <ul class="footer__list">
               <li class="footer__list-item">
-                <a class="footer__social-link">
+                <a class="footer__social-link" href="#" target="_blank" rel="noopener">
                   <img
                     class="footer__social-icon"
                     src="./images/facebook_white.svg"
+                    alt="Facebook"
                   />
                   Facebook
                 </a>
               </li>
               <li class="footer__list-item">
-                <a class="footer__social-link">
+                <a class="footer__social-link" href="#" target="_blank" rel="noopener">
                   <img
                     class="footer__social-icon"
                     src="./images/instagram_white.svg"
+                    alt="Instagram"
                   />
                   Instagram
                 </a>
               </li>
             </ul>
           </div>
-        </section>  
+        </section>
+
         <div class="footer__copyright">© 2025 Luigi Benaduce</div>
       </footer>
     </div>
