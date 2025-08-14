@@ -1,4 +1,10 @@
 @import url("../vendor/normalize.css");
 @import url("../blocks/page.css");
-@import url("../blocks/base.css");
+@import url("../blocks/header.css");
+@import url("../blocks/nav.css");
 @import url("../blocks/recipes.css");
+@import url("../blocks/reservation.css");
+@import url("../blocks/form.css");
+@import url("../blocks/footer.css");
+@import url("../blocks/root/root.css"); 
+@import url("../blocks/hero/hero.css");

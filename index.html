@@ -19,7 +19,7 @@
   <body>
     <div class="page">
       <header class="header">
-        <nav class="nav">
+        <nav class="nav" aria-label="Principal">
           <img
             class="nav__logo"
             src="./images/logo_coffeeshop_dark.svg"
@@ -32,19 +32,22 @@
           </ul>
         </nav>
 
-        <h1 class="header__title">
-          <span class="header__span-accent">Café especial</span>
+        <h1 id="hero-title" class="herotitle">
+          <span class="herotitle__accent">Café especial</span>
           na biblioteca Triple Peaks
         </h1>
+
         <p class="header__description">
           <span class="header__description-break">Café de verdade somente aqui! Café sem açúcar para energizar</span>
           você e vibrações aconchegantes para soltar a criatividade.
         </p>
+
         <img
           class="header__image"
           src="./images/inside_coffee_shop.png"
           alt="Interior da Triple Peaks Coffee Shop"
         >
+
         <div class="header__footer">
           <p class="header__paragraph"><span>Horários:</span></p>
           <p class="header__paragraph"><span>Segunda a sexta (10:00 - 19:00)</span></p>
@@ -54,7 +57,7 @@
       </header>
 
       <main class="content">
-        <section id="recipes" class="recipes">
+        <section id="recipes" class="recipes anchor-offset">
           <h2 class="recipes__title">Receitas</h2>
           <p class="recipes__subtitle">Confira algumas receitas que coletamos para seu lanchinho caseiro:</p>
 
@@ -85,7 +88,7 @@
           </div>
         </section>
 
-        <section id="reservation" class="reservation">
+        <section id="reservation" class="reservation anchor-offset">
           <div class="reservation__content">
             <h2 class="reservation__title">Reservar uma mesa</h2>
 
@@ -116,7 +119,7 @@
       <footer class="footer">
         <div class="footer__circle"></div>
 
-        <section class="footer__content" id="contatos">
+        <section class="footer__content anchor-offset" id="contatos">
           <img
             class="footer__logo"
             src="./images/logo_coffeeshop_light.svg"

@@ -1,0 +1,13 @@
+.herotitle {
+  margin: 0;
+  font-family: "Inter", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  font-weight: 500;
+  font-size: clamp(28px, 6vw, 64px);
+  line-height: 1.1;
+  text-wrap: balance;         
+}
+
+.herotitle__accent {
+  display: block;             
+  color: #2f80ed;            
+}
