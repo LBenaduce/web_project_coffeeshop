@@ -1,38 +1,118 @@
-.recipes{padding-top:100px;padding-bottom:80px}
-.recipes__title{max-width:580px;margin:0 auto 16px;font-family:"Inter",system-ui,Arial,sans-serif;font-weight:600;font-size:44px;line-height:52px;text-align:center}
-.recipes__subtitle{max-width:560px;margin:0 auto 48px;font-family:"Noto Serif","Times New Roman",serif;font-weight:400;font-size:20px;line-height:30px;text-align:center}
-.recipes__videos{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:32px;align-items:start;justify-items:center}
-.recipes__video{width:100%;max-width:520px}
-.recipes__iframe{width:100%;aspect-ratio:16/9;border:none;border-radius:16px;box-shadow:0 6px 24px rgba(0,0,0,.08)}
-.recipes__video-caption{margin-top:12px;font-family:"Inter",system-ui,Arial,sans-serif;font-weight:500;font-size:18px;line-height:24px;text-align:center}
-@media (max-width:820px){
-  .recipes{padding-top:64px;padding-bottom:56px}
-  .recipes__title{font-size:32px;line-height:40px}
-  .recipes__subtitle{font-size:18px;line-height:28px}
+.recipes {
+  position: relative;
+  padding-top: 100px;
+  padding-bottom: 80px;
+  background-color: #0A2850;
+  overflow: hidden;
+  color: #fff;
 }
 
-.recipes{padding-top:100px;padding-bottom:80px}
-
-.recipes__title{max-width:580px;margin:0 auto 16px;font-family:"Inter",system-ui,Arial,sans-serif;font-weight:600;font-size:44px;line-height:52px;text-align:center}
-
-.recipes__subtitle{max-width:560px;margin:0 auto 48px;font-family:"Noto Serif","Times New Roman",serif;font-weight:400;font-size:20px;line-height:30px;text-align:center}
-
-.recipes__videos{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:32px;align-items:start;justify-items:center}
-
-.recipes__video{width:100%;max-width:520px}
-
-.recipes__iframe{width:100%;aspect-ratio:16/9;border:none;border-radius:16px;box-shadow:0 6px 24px rgba(0,0,0,.08)}
-
-.recipes__video-caption{margin-top:12px;font-family:"Inter",system-ui,Arial,sans-serif;font-weight:500;font-size:18px;line-height:24px;text-align:center}
-
-.recipes{padding-top:64px;padding-bottom:56px}
-
-.recipes__title{font-size:32px;line-height:40px}
-
-.recipes__subtitle{font-size:18px;line-height:28px}
-
-@media (max-width:820px){
-  .recipes{padding-top:64px;padding-bottom:56px}
+.recipes::before,
+.recipes::after {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  background: #2F80ED;
+  opacity: .22;
+  z-index: 0;
+  filter: blur(0.3px);
 }
 
-body {color: #fff}
+.recipes::before {
+  width: 360px;
+  height: 360px;
+  top: -140px;
+  left: -120px;
+}
+
+.recipes::after {
+  width: 240px;
+  height: 240px;
+  bottom: -80px;
+  right: -100px;
+}
+
+.recipes__title,
+.recipes__subtitle,
+.recipes__videos {
+  position: relative;
+  z-index: 1;
+}
+
+.recipes__title {
+  max-width: 580px;
+  margin: 0 auto 16px;
+  font-family: "Inter", system-ui, Arial, sans-serif;
+  font-weight: 600;
+  font-size: 44px;
+  line-height: 52px;
+  text-align: center;
+}
+
+.recipes__subtitle {
+  max-width: 560px;
+  margin: 0 auto 48px;
+  font-family: "Noto Serif", "Times New Roman", serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: center;
+  opacity: .95;
+}
+
+.recipes__videos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 32px;
+  align-items: start;
+  justify-items: center;
+}
+
+.recipes__video {
+  width: 100%;
+  max-width: 520px;
+}
+
+.recipes__iframe {
+  width: 100%;
+  aspect-ratio: 16/9;
+  border: none;
+  border-radius: 16px;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, .18);
+}
+
+.recipes__video-caption {
+  margin-top: 12px;
+  font-family: "Inter", system-ui, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+}
+
+@media (max-width: 820px) {
+  .recipes {
+    padding-top: 64px;
+    padding-bottom: 56px;
+  }
+  .recipes__title {
+    font-size: 32px;
+    line-height: 40px;
+  }
+  .recipes__subtitle {
+    font-size: 18px;
+    line-height: 28px;
+  }
+  .recipes::before {
+    width: 260px;
+    height: 260px;
+    top: -110px;
+    left: -140px;
+  }
+  .recipes::after {
+    width: 180px;
+    height: 180px;
+    bottom: -90px;
+    right: -120px;
+  }
+}
